@@ -606,8 +606,8 @@ a {
 
 /* line 16, ../sass/_typography.sass */
 a:visited {
-  color: #9a6c57;
-  border: #d6ccc9;
+  color: #927b78;
+  border: #c3b8b7;
 }
 
 /* line 19, ../sass/_typography.sass */
@@ -630,12 +630,7 @@ a img {
   color: inherit;
 }
 
-/* line 34, ../sass/_typography.sass */
-p, ul, ol {
-  margin: 1em 0 0 0;
-}
-
-/* line 38, ../sass/_typography.sass */
+/* line 35, ../sass/_typography.sass */
 h1 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -644,13 +639,13 @@ h1 {
   color: #d02310;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 41, ../sass/_typography.sass */
 h1 a,
 h1 a:visited {
   border: none;
 }
 
-/* line 38, ../sass/_typography.sass */
+/* line 35, ../sass/_typography.sass */
 h2 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -659,13 +654,13 @@ h2 {
   color: #d02310;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 41, ../sass/_typography.sass */
 h2 a,
 h2 a:visited {
   border: none;
 }
 
-/* line 38, ../sass/_typography.sass */
+/* line 35, ../sass/_typography.sass */
 h3 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -674,13 +669,13 @@ h3 {
   color: #d02310;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 41, ../sass/_typography.sass */
 h3 a,
 h3 a:visited {
   border: none;
 }
 
-/* line 38, ../sass/_typography.sass */
+/* line 35, ../sass/_typography.sass */
 h4 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -689,13 +684,13 @@ h4 {
   color: #d02310;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 41, ../sass/_typography.sass */
 h4 a,
 h4 a:visited {
   border: none;
 }
 
-/* line 38, ../sass/_typography.sass */
+/* line 35, ../sass/_typography.sass */
 h5 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -704,13 +699,13 @@ h5 {
   color: #d02310;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 41, ../sass/_typography.sass */
 h5 a,
 h5 a:visited {
   border: none;
 }
 
-/* line 38, ../sass/_typography.sass */
+/* line 35, ../sass/_typography.sass */
 h6 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -719,57 +714,75 @@ h6 {
   color: #d02310;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 41, ../sass/_typography.sass */
 h6 a,
 h6 a:visited {
   border: none;
 }
 
-/* line 48, ../sass/_typography.sass */
+/* line 45, ../sass/_typography.sass */
 h1 {
   font-size: 4em;
   font-weight: 100;
 }
 
-/* line 52, ../sass/_typography.sass */
+/* line 49, ../sass/_typography.sass */
 h2 {
   font-size: 1.5em;
   margin-top: 2.5em;
 }
 
-/* line 56, ../sass/_typography.sass */
+/* line 53, ../sass/_typography.sass */
 h3 {
   font-weight: bold;
 }
 
-/* line 59, ../sass/_typography.sass */
+/* line 56, ../sass/_typography.sass */
 h4 {
   margin: 1.5em 0 0.5em 0;
-  font-size: 0.85em;
-  font-weight: bold;
+  font-size: 0.9em;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-/* line 66, ../sass/_typography.sass */
+/* line 63, ../sass/_typography.sass */
 h5 {
   font-style: italic;
-  font-weight: normal;
+  font-weight: bold;
+  font-weight: 400;
 }
 
-/* line 70, ../sass/_typography.sass */
+/* line 68, ../sass/_typography.sass */
 h6 {
-  font-style: italic;
   font-weight: normal;
-  color: #333333;
 }
 
-/* line 77, ../sass/_typography.sass */
+/* line 73, ../sass/_typography.sass */
+p, ul, ol {
+  margin: 1em 0 0 0;
+}
+
+/* line 76, ../sass/_typography.sass */
+.intro {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: black;
+}
+
+/* line 82, ../sass/_typography.sass */
+.secondary {
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+
+/* line 88, ../sass/_typography.sass */
 em, cite {
   font-style: italic;
 }
 
-/* line 80, ../sass/_typography.sass */
+/* line 91, ../sass/_typography.sass */
 strong {
   font-weight: bold;
 }

@@ -29,10 +29,7 @@ a.noborder, a.noborder:hover
 a img
 	+noborder
 
-// blocks
-
-p, ul, ol
-	margin: 1em 0 0 0
+// headers
 
 @for $i from 1 through 6
 	h#{$i}
@@ -58,19 +55,33 @@ h3
 
 h4
 	margin: 1.5em 0 0.5em 0
-	font-size: 0.85em
-	font-weight: bold
+	font-size: 0.9em
+	font-weight: normal
 	text-transform: uppercase
 	letter-spacing: 0.1em
 
 h5
 	font-style: italic
-	font-weight: normal
+	font-weight: bold
+	font-weight: 400
 
 h6
-	font-style: italic
 	font-weight: normal
-	color: $color_text
+	
+// blocks
+
+p, ul, ol
+	margin: 1em 0 0 0
+
+.intro
+	font-size: 1.6em
+	line-height: 1.6em
+	font-weight: 300
+	color: $color_text_darker
+
+.secondary
+	font-size: 0.75em
+	line-height: 1.5em
 	
 // inline elements
 
