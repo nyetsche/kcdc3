@@ -1,9 +1,19 @@
+// normalize and front of H5BP
 @import '../css/normalize.scss'
 @import '../css/h5bp_start.scss'
 
+// SASS/Compass helpers
+@import 'compass/css3/border-radius'
+
+// local style components
+@import '_colors.sass'
+@import '_typography.sass'
+
 /* ----- start project styles  -------------------------------------------- */
 
-
+#container
+	width: 550px
+	margin: 2em auto 0 auto	
 
 
 
@@ -31,4 +41,5 @@
 
 /* ----- end project styles  ---------------------------------------------- */
 
+// remainder of H5BP
 @import '../css/h5bp_end.scss'

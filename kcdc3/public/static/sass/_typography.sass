@@ -1,0 +1,89 @@
+
+body
+	color: $color_text
+	font-size: 16px
+	line-height: 1.5em
+	font-family: 'Source Sans Pro', 'Helvetica Neue',Helvetica,Arial,sans-serif
+
+// links
+
+a
+	color: $color_link
+	text-decoration: none
+	padding: 1px 2px
+	border: 1px solid $color_link_border
+	background: $color_link_background
+	@include border-radius(4px)
+a:visited
+	border: $color_link_visited_border
+	background: $color_link_visited_background
+a:hover
+	color: $color_link_hover
+	background: $color_link_hover_background
+
+p a,
+blockquote a,
+li a
+	white-space: nowrap
+
+@mixin noborder
+	background: none
+	border: none
+	color: inherit
+a.noborder, a.noborder:hover
+	+noborder
+a img
+	+noborder
+
+// blocks
+
+p, ul, ol
+	margin: 1em 0 0 0
+
+@for $i from 1 through 6
+	h#{$i}
+		margin: 1.5em 0 0.5em 0
+		font-size: 1em
+		line-height: 1.0em
+		font-weight: bold
+		color: $colorA
+	h#{$i} a,
+	h#{$i} a:visited
+		border: none
+
+h1
+	font-size: 4em
+	font-weight: 100
+
+h2
+	font-size: 1.5em
+	margin-top: 2.5em
+
+h3
+	font-weight: bold
+
+h4
+	margin: 1.5em 0 0.5em 0
+	font-size: 0.85em
+	font-weight: bold
+	text-transform: uppercase
+	letter-spacing: 0.1em
+
+h5
+	font-style: italic
+	font-weight: normal
+
+h6
+	font-style: italic
+	font-weight: normal
+	color: $color_text
+	
+// inline elements
+
+em, cite
+	font-style: italic
+	
+strong
+	font-weight: bold
+	
+	
