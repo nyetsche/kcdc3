@@ -538,24 +538,18 @@ textarea {
 }
 
 /* line 13, h5bp_start.scss */
-body {
-  font-size: 1em;
-  line-height: 1.4;
+::-moz-selection {
+  background: #FFC900;
+  text-shadow: none;
 }
 
 /* line 18, h5bp_start.scss */
-::-moz-selection {
-  background: #b3d4fc;
+::selection {
+  background: #FFC900;
   text-shadow: none;
 }
 
 /* line 23, h5bp_start.scss */
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/* line 28, h5bp_start.scss */
 hr {
   display: block;
   height: 1px;
@@ -565,24 +559,24 @@ hr {
   padding: 0;
 }
 
-/* line 37, h5bp_start.scss */
+/* line 32, h5bp_start.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 41, h5bp_start.scss */
+/* line 36, h5bp_start.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 47, h5bp_start.scss */
+/* line 42, h5bp_start.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 51, h5bp_start.scss */
+/* line 46, h5bp_start.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
