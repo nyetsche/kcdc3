@@ -748,14 +748,14 @@ h4 {
 
 /* line 63, ../sass/_typography.sass */
 h5 {
+  font-weight: normal;
+}
+
+/* line 66, ../sass/_typography.sass */
+h6 {
   font-style: italic;
   font-weight: bold;
   font-weight: 400;
-}
-
-/* line 68, ../sass/_typography.sass */
-h6 {
-  font-weight: normal;
 }
 
 /* line 73, ../sass/_typography.sass */
