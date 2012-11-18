@@ -8,24 +8,49 @@
 // local style components
 @import '_colors.sass'
 @import '_typography.sass'
+@import '_nav.sass'
 
 /* ----- start project styles  -------------------------------------------- */
 
+// we are using a more intuitive box model
+// see http://paulirish.com/2012/box-sizing-border-box-ftw
+*
+	box-sizing: border-box
+
+// uncomment this rule to put a transparent background behind elements
+div, article
+	background: $indicator
+
 #container
-	width: 550px
+	width: 80%
+	max-width: 960px
 	margin: 2em auto 0 auto	
 
+#skip
+	position: absolute
+	left: -9000px
 
+// turn off mobile-only elts
+#mobile_jump
+	display: none
+#mobile_nav
+	display: none
 
+#logo
+	width: 200px
+	float: left
 
+#desktop_nav
+	float: left
 
+#login
+	display: none
 
+#motd
+	display: none
 
-
-
-
-
-
+#content
+	clear: both
 
 
 

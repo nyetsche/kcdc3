@@ -787,11 +787,84 @@ strong {
   font-weight: bold;
 }
 
+/* line 4, ../sass/_nav.sass */
+.nav > li {
+  float: left;
+  list-style: none;
+  margin-right: 0.2em;
+}
+
+/* line 9, ../sass/_nav.sass */
+.nav > li > a {
+  border: none;
+  color: #333333;
+  padding: 3px 0.5em;
+}
+
+/* line 14, ../sass/_nav.sass */
+.nav > li > a:hover {
+  background: none;
+  border-bottom: 1px solid #333333;
+}
+
 /* ----- start project styles  -------------------------------------------- */
-/* line 14, ../sass/style.sass */
+/* line 17, ../sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/style.sass */
+div, article {
+  background: rgba(137, 223, 248, 0.1);
+}
+
+/* line 24, ../sass/style.sass */
 #container {
-  width: 550px;
+  width: 80%;
+  max-width: 960px;
   margin: 2em auto 0 auto;
+}
+
+/* line 29, ../sass/style.sass */
+#skip {
+  position: absolute;
+  left: -9000px;
+}
+
+/* line 34, ../sass/style.sass */
+#mobile_jump {
+  display: none;
+}
+
+/* line 36, ../sass/style.sass */
+#mobile_nav {
+  display: none;
+}
+
+/* line 39, ../sass/style.sass */
+#logo {
+  width: 200px;
+  float: left;
+}
+
+/* line 43, ../sass/style.sass */
+#desktop_nav {
+  float: left;
+}
+
+/* line 46, ../sass/style.sass */
+#login {
+  display: none;
+}
+
+/* line 49, ../sass/style.sass */
+#motd {
+  display: none;
+}
+
+/* line 52, ../sass/style.sass */
+#content {
+  clear: both;
 }
 
 /* ----- end project styles  ---------------------------------------------- */
