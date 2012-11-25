@@ -1,3 +1,5 @@
+@import url(../fonts/ss-standard/ss-standard.css);
+@import url(../fonts/ss-standard/ss-social.css);
 /* normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -590,8 +592,8 @@ textarea {
 /* line 2, ../sass/_typography.sass */
 body {
   color: #333333;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 15px;
+  line-height: 1.4em;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
@@ -614,23 +616,24 @@ a:visited {
 a:hover {
   color: white;
   background: #d02310;
+  border-bottom: 1px solid #d02310;
 }
 
-/* line 27, ../sass/_typography.sass */
+/* line 28, ../sass/_typography.sass */
 a.noborder, a.noborder:hover {
   background: none;
   border: none;
   color: inherit;
 }
 
-/* line 29, ../sass/_typography.sass */
+/* line 30, ../sass/_typography.sass */
 a img {
   background: none;
   border: none;
   color: inherit;
 }
 
-/* line 35, ../sass/_typography.sass */
+/* line 36, ../sass/_typography.sass */
 h1 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -639,13 +642,13 @@ h1 {
   color: #d02310;
 }
 
-/* line 41, ../sass/_typography.sass */
+/* line 42, ../sass/_typography.sass */
 h1 a,
 h1 a:visited {
   border: none;
 }
 
-/* line 35, ../sass/_typography.sass */
+/* line 36, ../sass/_typography.sass */
 h2 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -654,13 +657,13 @@ h2 {
   color: #d02310;
 }
 
-/* line 41, ../sass/_typography.sass */
+/* line 42, ../sass/_typography.sass */
 h2 a,
 h2 a:visited {
   border: none;
 }
 
-/* line 35, ../sass/_typography.sass */
+/* line 36, ../sass/_typography.sass */
 h3 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -669,13 +672,13 @@ h3 {
   color: #d02310;
 }
 
-/* line 41, ../sass/_typography.sass */
+/* line 42, ../sass/_typography.sass */
 h3 a,
 h3 a:visited {
   border: none;
 }
 
-/* line 35, ../sass/_typography.sass */
+/* line 36, ../sass/_typography.sass */
 h4 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -684,13 +687,13 @@ h4 {
   color: #d02310;
 }
 
-/* line 41, ../sass/_typography.sass */
+/* line 42, ../sass/_typography.sass */
 h4 a,
 h4 a:visited {
   border: none;
 }
 
-/* line 35, ../sass/_typography.sass */
+/* line 36, ../sass/_typography.sass */
 h5 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -699,13 +702,13 @@ h5 {
   color: #d02310;
 }
 
-/* line 41, ../sass/_typography.sass */
+/* line 42, ../sass/_typography.sass */
 h5 a,
 h5 a:visited {
   border: none;
 }
 
-/* line 35, ../sass/_typography.sass */
+/* line 36, ../sass/_typography.sass */
 h6 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -714,30 +717,31 @@ h6 {
   color: #d02310;
 }
 
-/* line 41, ../sass/_typography.sass */
+/* line 42, ../sass/_typography.sass */
 h6 a,
 h6 a:visited {
   border: none;
 }
 
-/* line 45, ../sass/_typography.sass */
+/* line 46, ../sass/_typography.sass */
 h1 {
   font-size: 4em;
   font-weight: 100;
 }
 
-/* line 49, ../sass/_typography.sass */
+/* line 50, ../sass/_typography.sass */
 h2 {
   font-size: 1.5em;
   margin-top: 2.5em;
 }
 
-/* line 53, ../sass/_typography.sass */
+/* line 54, ../sass/_typography.sass */
 h3 {
   font-weight: bold;
+  line-height: 1.25em;
 }
 
-/* line 56, ../sass/_typography.sass */
+/* line 58, ../sass/_typography.sass */
 h4 {
   margin: 1.5em 0 0.5em 0;
   font-size: 0.9em;
@@ -746,24 +750,24 @@ h4 {
   letter-spacing: 0.1em;
 }
 
-/* line 63, ../sass/_typography.sass */
+/* line 65, ../sass/_typography.sass */
 h5 {
   font-weight: normal;
 }
 
-/* line 66, ../sass/_typography.sass */
+/* line 68, ../sass/_typography.sass */
 h6 {
   font-style: italic;
   font-weight: bold;
   font-weight: 400;
 }
 
-/* line 73, ../sass/_typography.sass */
+/* line 75, ../sass/_typography.sass */
 p, ul, ol {
   margin: 1em 0 0 0;
 }
 
-/* line 76, ../sass/_typography.sass */
+/* line 78, ../sass/_typography.sass */
 .intro {
   font-size: 1.6em;
   line-height: 1.6em;
@@ -771,19 +775,19 @@ p, ul, ol {
   color: black;
 }
 
-/* line 82, ../sass/_typography.sass */
+/* line 84, ../sass/_typography.sass */
 .secondary {
   font-size: 0.75em;
   line-height: 1.5em;
 }
 
-/* line 88, ../sass/_typography.sass */
-em, cite {
+/* line 90, ../sass/_typography.sass */
+em, cite, i {
   font-style: italic;
 }
 
-/* line 91, ../sass/_typography.sass */
-strong {
+/* line 93, ../sass/_typography.sass */
+strong, b {
   font-weight: bold;
 }
 
@@ -803,71 +807,158 @@ strong {
 
 /* line 14, ../sass/_nav.sass */
 .nav > li > a:hover {
-  background: none;
-  border-bottom: 1px solid #333333;
+  background: #d02310;
+  color: white;
 }
 
-/* ----- start project styles  -------------------------------------------- */
-/* line 17, ../sass/style.sass */
+/* line 18, ../sass/_nav.sass */
+.nav > li > .login {
+  font-style: italic;
+  color: #d02310;
+}
+
+/* ----- START PROJECT STYLES  -------------------------------------------- */
+/* ----- setup -------------------------------------------- */
+/* line 24, ../sass/style.sass */
 * {
   box-sizing: border-box;
 }
 
-/* line 21, ../sass/style.sass */
-div, article {
-  background: rgba(137, 223, 248, 0.1);
-}
-
-/* line 24, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 #container {
   width: 80%;
   max-width: 960px;
   margin: 2em auto 0 auto;
 }
 
-/* line 29, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 #skip {
   position: absolute;
   left: -9000px;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
+img {
+  max-width: 100%;
+}
+
+/* ----- layout  -------------------------------------------- */
+/* line 46, ../sass/style.sass */
 #mobile_jump {
   display: none;
 }
 
-/* line 36, ../sass/style.sass */
+/* line 48, ../sass/style.sass */
 #mobile_nav {
   display: none;
 }
 
-/* line 39, ../sass/style.sass */
+/* line 51, ../sass/style.sass */
 #logo {
   width: 200px;
   float: left;
 }
 
-/* line 43, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 #desktop_nav {
   float: left;
 }
 
-/* line 46, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 #login {
   display: none;
 }
 
-/* line 49, ../sass/style.sass */
+/* line 61, ../sass/style.sass */
 #motd {
   display: none;
 }
 
-/* line 52, ../sass/style.sass */
+/* line 64, ../sass/style.sass */
 #content {
   clear: both;
+  padding: 2em 0 0 0;
 }
 
-/* ----- end project styles  ---------------------------------------------- */
+/* line 70, ../sass/style.sass */
+#features {
+  zoom: 1;
+  padding: 3em 0 0 0;
+}
+/* line 18, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+#features:before, #features:after {
+  content: "";
+  display: table;
+}
+/* line 23, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+#features:after {
+  clear: both;
+}
+/* line 73, ../sass/style.sass */
+#features > div {
+  width: 50%;
+  float: left;
+}
+/* line 76, ../sass/style.sass */
+#features h3 {
+  font-size: 1.25em;
+  color: #666666;
+  margin: 0;
+}
+/* line 80, ../sass/style.sass */
+#features .date {
+  margin: 0 0 0.5em 0;
+}
+/* line 82, ../sass/style.sass */
+#features h3 + p {
+  margin-top: 0.5em;
+}
+/* line 84, ../sass/style.sass */
+#features .instructor {
+  margin-top: 0.5em;
+}
+
+/* line 87, ../sass/style.sass */
+#features > div > a {
+  display: block;
+  border: none;
+  border-top: 1px solid #dddddd;
+  padding: 1em 2em 2em 0;
+  color: #666666;
+}
+
+/* line 94, ../sass/style.sass */
+#features > div:nth-child(odd) {
+  padding: 0 1em 0 0;
+}
+
+/* line 97, ../sass/style.sass */
+#features > div:nth-child(even) {
+  padding: 0 0 0 1em;
+}
+
+/* line 100, ../sass/style.sass */
+#features > div > a:hover,
+#features > div > a:hover > h3 {
+  background: white;
+  color: #0f7eb2;
+  border-bottom: none;
+}
+
+/* line 106, ../sass/style.sass */
+.ss-icon-clock {
+  margin-right: 0.1em;
+  position: relative;
+  top: 0.15em;
+}
+
+/* line 111, ../sass/style.sass */
+.ss-icon-star {
+  position: relative;
+  top: 0.1em;
+}
+
+/* ----- END PROJECT STYLES  ---------------------------------------------- */
 /* ==========================================================================
    Helper classes
    ========================================================================== */

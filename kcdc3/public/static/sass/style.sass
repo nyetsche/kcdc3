@@ -2,15 +2,22 @@
 @import '../css/normalize.scss'
 @import '../css/h5bp_start.scss'
 
+// symbolset
+@import '../fonts/ss-standard/ss-standard.css'
+@import '../fonts/ss-standard/ss-social.css'
+
 // SASS/Compass helpers
 @import 'compass/css3/border-radius'
+@import 'bourbon'
 
 // local style components
 @import '_colors.sass'
 @import '_typography.sass'
 @import '_nav.sass'
 
-/* ----- start project styles  -------------------------------------------- */
+/* ----- START PROJECT STYLES  -------------------------------------------- */
+
+/* ----- setup -------------------------------------------- */
 
 // we are using a more intuitive box model
 // see http://paulirish.com/2012/box-sizing-border-box-ftw
@@ -19,7 +26,7 @@
 
 // uncomment this rule to put a transparent background behind elements
 div, article
-	background: $indicator
+	//background: $indicator
 
 #container
 	width: 80%
@@ -29,6 +36,11 @@ div, article
 #skip
 	position: absolute
 	left: -9000px
+
+img
+	max-width: 100%
+
+/* ----- layout  -------------------------------------------- */
 
 // turn off mobile-only elts
 #mobile_jump
@@ -51,20 +63,56 @@ div, article
 
 #content
 	clear: both
+	padding: 2em 0 0 0
 
+// front page
 
+#features
+	@include clearfix
+	padding: 3em 0 0 0
+	& > div
+		width: 50%
+		float: left
+	h3
+		font-size: 1.25em
+		color: $color_text_lighter
+		margin: 0
+	.date
+		margin: 0 0 0.5em 0
+	h3 + p
+		margin-top: 0.5em
+	.instructor
+		margin-top: 0.5em
 
+#features > div > a
+	display: block
+	border: none
+	border-top: 1px solid #ddd
+	padding: 1em 2em 2em 0
+	color: $color_text_lighter
 
+#features > div:nth-child(odd)
+	padding: 0 1em 0 0
 
+#features > div:nth-child(even)
+	padding: 0 0 0 1em
 
+#features > div > a:hover,
+#features > div > a:hover > h3
+	background: #fff
+	color: $colorB2
+	border-bottom: none
 
+.ss-icon-clock
+	margin-right: 0.1em
+	position: relative
+	top: 0.15em
 
+.ss-icon-star
+	position: relative
+	top: 0.1em
 
-
-
-
-
-/* ----- end project styles  ---------------------------------------------- */
+/* ----- END PROJECT STYLES  ---------------------------------------------- */
 
 // remainder of H5BP
 @import '../css/h5bp_end.scss'
