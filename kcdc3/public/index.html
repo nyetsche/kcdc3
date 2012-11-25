@@ -40,7 +40,16 @@
 			<div id="content">
 				
 				<div id="slideshow">
-					<img src="/media/uploads/front/lockpicking.jpg" alt="lock" />
+					<div id="flexslider">
+						<ul class="slides">
+							<li><img src="/media/uploads/front/lockpicking.jpg" alt="slideshow" /></li>
+							<li><img src="/media/uploads/front/light.jpg" alt="slideshow" /></li>
+							<li><img src="/media/uploads/front/plants.jpg" alt="slideshow" /></li>
+						</ul>
+					</div>
+					<div id="front_intro">
+						<p>Knowledge Commons DC is a free school for thinkers, doers, and tinkerers &ndash; taught anywhere, by anyone, for everyone.</p>
+					</div>
 				</div>
 								
 				<div id="features">
@@ -168,6 +177,7 @@
 
 		<!-- dev scripts -->
         <script src="/static/js/vendor/jquery.qtip-1.0.0-rc3.js"></script>
+        <script src="/static/js/vendor/jquery.flexslider.js"></script>
         <script src="/static/js/plugins.js"></script>
         <script src="/static/js/main.js"></script>
 		
@@ -183,13 +193,24 @@
         </script>
 
 		<!-- local scripts for page -->
+
+		<!-- Hook up front page FlexSlider -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#flexslider').flexslider({
+					controlNav: false,
+					directionNav: false
+				});
+			});
+		</script>
+
+		<!-- tooltips for minical -->
 		<script>
 		
 			$(document).ready(function() 
 			{
 
-				// tooltips for minical
-
+				// shared style
 				$.fn.qtip.styles.minical = { // Last part is the name of the style
 				   width: 200,
 				   background: '#FB2710',
