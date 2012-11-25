@@ -65,7 +65,10 @@ img
 	clear: both
 	padding: 2em 0 0 0
 
-// front page
+#footer
+	margin-top: 4em
+	
+// front page: features
 
 #features
 	@include clearfix
@@ -77,12 +80,14 @@ img
 		font-size: 1.25em
 		color: $color_text_lighter
 		margin: 0
+	h3 > i
+		color: $colorB
 	.date
-		margin: 0 0 0.5em 0
+		margin: 0 0 0.25em 0
 	h3 + p
 		margin-top: 0.5em
 	.instructor
-		margin-top: 0.5em
+		margin-top: 0.25em
 
 #features > div > a
 	display: block
@@ -111,6 +116,55 @@ img
 .ss-icon-star
 	position: relative
 	top: 0.1em
+
+// front page: minical
+
+#minical
+	margin: 0 0 0 0
+	h2
+		margin: 1em 0 0.5em 0
+	h2 > a,
+	h2 > a:hover
+		color: $colorA
+		border: none
+		
+.minical_month
+	margin-bottom: 0.5em
+	@include clearfix
+	& > h4
+		float: left
+		margin: 0.5em 1em 0 0
+		clear: left
+		color: $colorA
+	& > ul
+		list-style: none
+		margin: 0
+		padding: 0
+		float: left
+	& > ul > li	
+		margin: 0 2px 2px 0
+		float: left
+		font-size: 0.8em
+	& > ul > li	> a
+		display: block
+		border: none
+		background: #EBEBEB
+		color: #aaa
+		padding: 0px 6px
+		border-radius: 9px
+	& > ul > li	> a:hover
+		background: #ccc
+		color: #aaa
+	& > ul > .sunday
+		margin-right: 15px
+	.event_1x
+		background: $colorA
+		color: #fff
+	.event_1x:hover
+		background: $colorA1
+		color: #fff
+
+
 
 /* ----- END PROJECT STYLES  ---------------------------------------------- */
 
