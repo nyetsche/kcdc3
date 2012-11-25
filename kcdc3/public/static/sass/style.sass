@@ -48,8 +48,11 @@ img
 #mobile_nav
 	display: none
 
+// shared layout elts
+
 #logo
 	width: 200px
+	margin-bottom: 1em
 	float: left
 
 #desktop_nav
@@ -67,7 +70,14 @@ img
 
 #footer
 	margin-top: 4em
-	
+
+// mobile
+@media screen and (max-width: 600px)
+	#logo
+		clear: both
+	#desktop_nav
+		clear: both
+
 // front page: features
 
 #features
@@ -80,14 +90,14 @@ img
 		font-size: 1.25em
 		color: $color_text_lighter
 		margin: 0
-	h3 > i
-		color: $colorB
 	.date
 		margin: 0 0 0.25em 0
 	h3 + p
 		margin-top: 0.5em
 	.instructor
 		margin-top: 0.25em
+	i
+		color: $colorB2
 
 #features > div > a
 	display: block
@@ -108,14 +118,29 @@ img
 	color: $colorB2
 	border-bottom: none
 
-.ss-icon-clock
+.features-ss-icon-clock
 	margin-right: 0.1em
 	position: relative
 	top: 0.15em
+	color: $colorB
 
-.ss-icon-star
+.features-ss-icon-star
 	position: relative
 	top: 0.1em
+	color: $colorB
+
+@media screen and (max-width: 600px)
+
+	#features
+		& > div
+			width: 100%
+			clear: both
+
+	#features > div:nth-child(odd)
+		padding: 0 0 0 0
+
+	#features > div:nth-child(even)
+		padding: 0 0 0 0
 
 // front page: minical
 
@@ -133,7 +158,7 @@ img
 	@include clearfix
 	& > h4
 		float: left
-		margin: 0.5em 1em 0 0
+		margin: 0.5em 1em 0.5em 0
 		clear: left
 		color: $colorA
 	& > ul
@@ -157,11 +182,9 @@ img
 		color: #aaa
 	& > ul > .sunday
 		margin-right: 15px
-	.event_1x
-		background: $colorA
-		color: #fff
+	.event_1x,
 	.event_1x:hover
-		background: $colorA1
+		background: $colorA
 		color: #fff
 
 
