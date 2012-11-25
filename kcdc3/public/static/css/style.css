@@ -596,9 +596,10 @@ body {
   line-height: 1.4em;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  text-align: left;
 }
 
-/* line 11, ../sass/_typography.sass */
+/* line 12, ../sass/_typography.sass */
 a {
   color: #961604;
   text-decoration: none;
@@ -606,34 +607,34 @@ a {
   border-bottom: 1px solid #c49b8f;
 }
 
-/* line 16, ../sass/_typography.sass */
+/* line 17, ../sass/_typography.sass */
 a:visited {
   color: #927b78;
   border: #c3b8b7;
 }
 
-/* line 19, ../sass/_typography.sass */
+/* line 20, ../sass/_typography.sass */
 a:hover {
   color: white;
   background: #d02310;
   border-bottom: 1px solid #d02310;
 }
 
-/* line 28, ../sass/_typography.sass */
+/* line 29, ../sass/_typography.sass */
 a.noborder, a.noborder:hover {
   background: none;
   border: none;
   color: inherit;
 }
 
-/* line 30, ../sass/_typography.sass */
+/* line 31, ../sass/_typography.sass */
 a img {
   background: none;
   border: none;
   color: inherit;
 }
 
-/* line 36, ../sass/_typography.sass */
+/* line 37, ../sass/_typography.sass */
 h1 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -642,13 +643,13 @@ h1 {
   color: #fb2710;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 45, ../sass/_typography.sass */
 h1 a:hover {
   background: none;
   border: none;
 }
 
-/* line 36, ../sass/_typography.sass */
+/* line 37, ../sass/_typography.sass */
 h2 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -657,13 +658,13 @@ h2 {
   color: #fb2710;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 45, ../sass/_typography.sass */
 h2 a:hover {
   background: none;
   border: none;
 }
 
-/* line 36, ../sass/_typography.sass */
+/* line 37, ../sass/_typography.sass */
 h3 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -672,13 +673,13 @@ h3 {
   color: #fb2710;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 45, ../sass/_typography.sass */
 h3 a:hover {
   background: none;
   border: none;
 }
 
-/* line 36, ../sass/_typography.sass */
+/* line 37, ../sass/_typography.sass */
 h4 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -687,13 +688,13 @@ h4 {
   color: #fb2710;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 45, ../sass/_typography.sass */
 h4 a:hover {
   background: none;
   border: none;
 }
 
-/* line 36, ../sass/_typography.sass */
+/* line 37, ../sass/_typography.sass */
 h5 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -702,13 +703,13 @@ h5 {
   color: #fb2710;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 45, ../sass/_typography.sass */
 h5 a:hover {
   background: none;
   border: none;
 }
 
-/* line 36, ../sass/_typography.sass */
+/* line 37, ../sass/_typography.sass */
 h6 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1em;
@@ -717,31 +718,31 @@ h6 {
   color: #fb2710;
 }
 
-/* line 44, ../sass/_typography.sass */
+/* line 45, ../sass/_typography.sass */
 h6 a:hover {
   background: none;
   border: none;
 }
 
-/* line 48, ../sass/_typography.sass */
+/* line 49, ../sass/_typography.sass */
 h1 {
   font-size: 4em;
   font-weight: 100;
 }
 
-/* line 52, ../sass/_typography.sass */
+/* line 53, ../sass/_typography.sass */
 h2 {
   font-size: 1.5em;
   margin-top: 2.5em;
 }
 
-/* line 56, ../sass/_typography.sass */
+/* line 57, ../sass/_typography.sass */
 h3 {
   font-weight: bold;
   line-height: 1.25em;
 }
 
-/* line 60, ../sass/_typography.sass */
+/* line 61, ../sass/_typography.sass */
 h4 {
   margin: 1.5em 0 0.5em 0;
   font-size: 0.9em;
@@ -750,24 +751,24 @@ h4 {
   letter-spacing: 0.1em;
 }
 
-/* line 67, ../sass/_typography.sass */
+/* line 68, ../sass/_typography.sass */
 h5 {
   font-weight: normal;
 }
 
-/* line 70, ../sass/_typography.sass */
+/* line 71, ../sass/_typography.sass */
 h6 {
   font-style: italic;
   font-weight: bold;
   font-weight: 400;
 }
 
-/* line 77, ../sass/_typography.sass */
+/* line 78, ../sass/_typography.sass */
 p, ul, ol {
   margin: 1em 0 0 0;
 }
 
-/* line 80, ../sass/_typography.sass */
+/* line 81, ../sass/_typography.sass */
 .intro {
   font-size: 1.6em;
   line-height: 1.6em;
@@ -775,18 +776,18 @@ p, ul, ol {
   color: black;
 }
 
-/* line 86, ../sass/_typography.sass */
+/* line 87, ../sass/_typography.sass */
 .secondary {
   font-size: 0.75em;
   line-height: 1.5em;
 }
 
-/* line 92, ../sass/_typography.sass */
+/* line 93, ../sass/_typography.sass */
 em, cite, i {
   font-style: italic;
 }
 
-/* line 95, ../sass/_typography.sass */
+/* line 96, ../sass/_typography.sass */
 strong, b {
   font-weight: bold;
 }
@@ -885,7 +886,7 @@ img {
 /* line 67, ../sass/style.sass */
 #content {
   clear: both;
-  padding: 2em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 /* line 71, ../sass/style.sass */
@@ -932,7 +933,7 @@ img {
 #flexslider > ul {
   margin: 0;
   padding: 0;
-  background: black;
+  background: #aaaaaa;
 }
 /* line 26, ../sass/_front.sass */
 #flexslider > ul > li {
@@ -943,23 +944,42 @@ img {
 
 /* line 33, ../sass/_front.sass */
 #front_intro {
-  position: relative;
-  top: -300px;
-  width: 300px;
-  padding: 0 0 0 2em;
+  margin: 0 auto 2.5em auto;
+  width: 90%;
 }
-/* line 38, ../sass/_front.sass */
-#front_intro p {
+/* line 36, ../sass/_front.sass */
+#front_intro .intro {
+  font-size: 2.25em;
+  line-height: 1.4em;
+  color: #333333;
+  font-weight: 200;
+}
+/* line 41, ../sass/_front.sass */
+#front_intro b {
+  font-weight: 200;
+  color: #fb2710;
+}
+/* line 44, ../sass/_front.sass */
+#front_intro .call {
+  text-align: right;
+  font-style: italic;
+}
+/* line 47, ../sass/_front.sass */
+#front_intro .call > a {
+  color: #fb2710;
+  border-bottom: 1px dashed #fb2710;
+  font-style: normal;
+}
+/* line 51, ../sass/_front.sass */
+#front_intro .call > a:hover {
+  background: #fb2710;
   color: white;
-  font-size: 1.25em;
-  line-height: 1.5em;
-  text-shadow: 2px 1px 3px black;
 }
 
-/* line 46, ../sass/_front.sass */
+/* line 57, ../sass/_front.sass */
 #features {
   zoom: 1;
-  padding: 3em 0 0 0;
+  padding: 2em 0 0 0;
 }
 /* line 18, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 #features:before, #features:after {
@@ -970,54 +990,51 @@ img {
 #features:after {
   clear: both;
 }
-/* line 49, ../sass/_front.sass */
-#features > div {
-  width: 50%;
-  float: left;
-}
-/* line 52, ../sass/_front.sass */
+/* line 60, ../sass/_front.sass */
 #features h3 {
-  font-size: 1.25em;
+  font-size: 1.2em;
   color: #666666;
   margin: 0;
 }
-/* line 56, ../sass/_front.sass */
+/* line 64, ../sass/_front.sass */
 #features .date {
   margin: 0 0 0.25em 0;
 }
-/* line 58, ../sass/_front.sass */
+/* line 66, ../sass/_front.sass */
 #features h3 + p {
   margin-top: 0.5em;
 }
-/* line 60, ../sass/_front.sass */
+/* line 68, ../sass/_front.sass */
 #features .instructor {
   margin-top: 0.25em;
 }
-/* line 62, ../sass/_front.sass */
+/* line 70, ../sass/_front.sass */
 #features i {
   color: #0f7eb2;
 }
 
-/* line 65, ../sass/_front.sass */
+/* line 73, ../sass/_front.sass */
+#features > div {
+  width: 25%;
+  float: left;
+  padding-right: 1em;
+}
+
+/* line 78, ../sass/_front.sass */
+#features > div:nth-child(n+4) {
+  padding-right: 0;
+}
+
+/* line 81, ../sass/_front.sass */
 #features > div > a {
   display: block;
   border: none;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #cccccc;
   padding: 1em 2em 2em 0;
   color: #666666;
 }
 
-/* line 72, ../sass/_front.sass */
-#features > div:nth-child(odd) {
-  padding: 0 1em 0 0;
-}
-
-/* line 75, ../sass/_front.sass */
-#features > div:nth-child(even) {
-  padding: 0 0 0 1em;
-}
-
-/* line 78, ../sass/_front.sass */
+/* line 88, ../sass/_front.sass */
 #features > div > a:hover,
 #features > div > a:hover > h3 {
   background: white;
@@ -1025,7 +1042,7 @@ img {
   border-bottom: none;
 }
 
-/* line 84, ../sass/_front.sass */
+/* line 94, ../sass/_front.sass */
 .features-ss-icon-clock {
   margin-right: 0.1em;
   position: relative;
@@ -1033,46 +1050,57 @@ img {
   color: #3e9bc3;
 }
 
-/* line 90, ../sass/_front.sass */
+/* line 100, ../sass/_front.sass */
 .features-ss-icon-star {
   position: relative;
   top: 0.1em;
   color: #3e9bc3;
 }
 
-@media screen and (max-width: 600px) {
-  /* line 98, ../sass/_front.sass */
+@media screen and (max-width: 860px) {
+  /* line 107, ../sass/_front.sass */
+  #features > div {
+    width: 50%;
+  }
+
+  /* line 110, ../sass/_front.sass */
+  #features > div:nth-child(even) {
+    padding-right: 0;
+  }
+
+  /* line 113, ../sass/_front.sass */
+  #features > div:nth-child(odd) {
+    padding-right: 1em;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 118, ../sass/_front.sass */
   #features > div {
     width: 100%;
     clear: both;
   }
 
-  /* line 102, ../sass/_front.sass */
+  /* line 122, ../sass/_front.sass */
   #features > div:nth-child(odd) {
-    padding: 0 0 0 0;
-  }
-
-  /* line 105, ../sass/_front.sass */
-  #features > div:nth-child(even) {
-    padding: 0 0 0 0;
+    padding-right: 0;
   }
 }
-/* line 110, ../sass/_front.sass */
+/* line 127, ../sass/_front.sass */
 #minical {
   margin: 0 0 0 0;
 }
-/* line 112, ../sass/_front.sass */
+/* line 129, ../sass/_front.sass */
 #minical h2 {
-  margin: 1em 0 0.5em 0;
+  margin: 0 0 0.5em 0;
 }
-/* line 114, ../sass/_front.sass */
+/* line 131, ../sass/_front.sass */
 #minical h2 > a,
 #minical h2 > a:hover {
   color: #fb2710;
   border: none;
 }
 
-/* line 119, ../sass/_front.sass */
+/* line 136, ../sass/_front.sass */
 .minical_month {
   margin-bottom: 0.5em;
   zoom: 1;
@@ -1086,27 +1114,27 @@ img {
 .minical_month:after {
   clear: both;
 }
-/* line 122, ../sass/_front.sass */
+/* line 139, ../sass/_front.sass */
 .minical_month > h4 {
   float: left;
   margin: 0.5em 1em 0.5em 0;
   clear: left;
   color: #fb2710;
 }
-/* line 127, ../sass/_front.sass */
+/* line 144, ../sass/_front.sass */
 .minical_month > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   float: left;
 }
-/* line 132, ../sass/_front.sass */
+/* line 149, ../sass/_front.sass */
 .minical_month > ul > li {
   margin: 0 2px 2px 0;
   float: left;
   font-size: 0.8em;
 }
-/* line 136, ../sass/_front.sass */
+/* line 153, ../sass/_front.sass */
 .minical_month > ul > li > a {
   display: block;
   border: none;
@@ -1115,16 +1143,16 @@ img {
   padding: 0px 6px;
   border-radius: 9px;
 }
-/* line 143, ../sass/_front.sass */
+/* line 160, ../sass/_front.sass */
 .minical_month > ul > li > a:hover {
   background: #cccccc;
   color: #aaaaaa;
 }
-/* line 146, ../sass/_front.sass */
+/* line 163, ../sass/_front.sass */
 .minical_month > ul > .sunday {
   margin-right: 15px;
 }
-/* line 148, ../sass/_front.sass */
+/* line 165, ../sass/_front.sass */
 .minical_month .event_1x,
 .minical_month .event_1x:hover {
   background: #fb2710;

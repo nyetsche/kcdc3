@@ -22,7 +22,7 @@
 #flexslider > ul 
 	margin: 0
 	padding: 0
-	background: #000
+	background: #aaa
 	& > li
 		list-style: none
 		margin: 0
@@ -31,26 +31,34 @@
 // front intro
 
 #front_intro
-	position: relative
-	top: -300px
-	width: 300px
-	padding: 0 0 0 2em
-	p
-		color: #fff
-		font-size: 1.25em
-		line-height: 1.5em
-		text-shadow: 2px 1px 3px #000
+	margin: 0 auto 2.5em auto
+	width: 90%
+	.intro
+		font-size: 2.25em
+		line-height: 1.4em
+		color: $color_text
+		font-weight: 200
+	b
+		font-weight: 200
+		color: $colorA
+	.call 
+		text-align: right
+		font-style: italic
+		& > a
+			color: $colorA
+			border-bottom: 1px dashed $colorA
+			font-style: normal
+		& > a:hover
+			background: $colorA
+			color: #fff
 		
 // features
 
 #features
 	@include clearfix
-	padding: 3em 0 0 0
-	& > div
-		width: 50%
-		float: left
+	padding: 2em 0 0 0
 	h3
-		font-size: 1.25em
+		font-size: 1.2em
 		color: $color_text_lighter
 		margin: 0
 	.date
@@ -62,18 +70,20 @@
 	i
 		color: $colorB2
 
+#features > div
+	width: 25%
+	float: left
+	padding-right: 1em
+
+#features > div:nth-child(n+4)
+	padding-right: 0
+
 #features > div > a
 	display: block
 	border: none
-	border-top: 1px solid #ddd
+	border-top: 1px solid #ccc
 	padding: 1em 2em 2em 0
 	color: $color_text_lighter
-
-#features > div:nth-child(odd)
-	padding: 0 1em 0 0
-
-#features > div:nth-child(even)
-	padding: 0 0 0 1em
 
 #features > div > a:hover,
 #features > div > a:hover > h3
@@ -92,25 +102,32 @@
 	top: 0.1em
 	color: $colorB
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 860px)
 
-	#features
-		& > div
-			width: 100%
-			clear: both
-
-	#features > div:nth-child(odd)
-		padding: 0 0 0 0
+	#features > div
+		width: 50%
 
 	#features > div:nth-child(even)
-		padding: 0 0 0 0
+		padding-right: 0
+
+	#features > div:nth-child(odd)
+		padding-right: 1em
+
+@media screen and (max-width: 550px)
+
+	#features > div
+		width: 100%
+		clear: both
+
+	#features > div:nth-child(odd)
+		padding-right: 0
 
 // minical
 
 #minical
 	margin: 0 0 0 0
 	h2
-		margin: 1em 0 0.5em 0
+		margin: 0 0 0.5em 0
 	h2 > a,
 	h2 > a:hover
 		color: $colorA

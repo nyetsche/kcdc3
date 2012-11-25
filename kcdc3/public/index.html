@@ -39,6 +39,12 @@
 			
 			<div id="content">
 				
+
+				<div id="front_intro">
+					<p class="intro"><b>Knowledge Commons DC</b> is a free school for thinkers, doers, and tinkerers &ndash; taught anywhere, by anyone, for everyone.</p>
+					<p class="call"><a href="/teach">Teach a class</a> or <a href="/take">Take a class</a></p>
+				</div>
+								
 				<div id="slideshow">
 					<div id="flexslider">
 						<ul class="slides">
@@ -47,36 +53,33 @@
 							<li><img src="/media/uploads/front/plants.jpg" alt="slideshow" /></li>
 						</ul>
 					</div>
-					<div id="front_intro">
-						<p>Knowledge Commons DC is a free school for thinkers, doers, and tinkerers &ndash; taught anywhere, by anyone, for everyone.</p>
-					</div>
 				</div>
-								
+
 				<div id="features">
 					<div>
 						<a href="" class="block_link">
-							<p class="date"><span class="ss-icon ss-icon-clock features-ss-icon-clock">&#x23F2;</span> <i>Class:</i> Tue 22 Jan, 7 pm</p>
+							<p class="date"><span class="ss-icon ss-icon-clock features-ss-icon-clock">&#x23F2;</span> <i>Class</i> Tue 22 Jan, 7 pm</p>
 							<h3>Intro to Lock Picking</h3>
 							<p class="instructor">Instructor: <b>Bradford Barr</b></p>
 						</a>
 					</div>
 					<div>
 						<a href="" class="block_link">
-							<p class="date"><span class="ss-icon ss-icon-clock features-ss-icon-clock">&#x23F2;</span> <i>Class:</i> Tue 15 Jan, 6:30 pm</p>
+							<p class="date"><span class="ss-icon ss-icon-clock features-ss-icon-clock">&#x23F2;</span> <i>Class</i> Tue 15 Jan, 6:30 pm</p>
 							<h3>How Children's Television Works</h3>
 							<p class="instructor">Instructor: <b>Sami Simon</b></p>
 						</a>
 					</div>
 					<div>
 						<a href="" class="block_link">
-							<p class="date"><span class="ss-icon ss-icon-clock features-ss-icon-clock">&#x23F2;</span> <i>Class:</i> Wed 9 Jan, 6:30 pm</p>
+							<p class="date"><span class="ss-icon ss-icon-clock features-ss-icon-clock">&#x23F2;</span> <i>Class</i> Wed 9 Jan, 6:30 pm</p>
 							<h3>Political Theater, Eastern Europe, and Making History Come to Life</h3>
 							<p class="instructor">Instructor: <b>John Feffer</b></p>
 						</a>
 					</div>
 					<div>
 						<a href="" class="block_link">
-							<p class="date"><span class="ss-icon ss-icon-star features-ss-icon-star">&#x22C6;</span> <i>Blog:</i> 13 Sept</p>
+							<p class="date"><span class="ss-icon ss-icon-star features-ss-icon-star">&#x22C6;</span> <i>Blog</i> 13 Sept</p>
 							<h3>Art Deployment Systems &ndash; Learning Crafty Ways to Make DC More Artful</h3>
 							<p class="instructor">By <b>Erika Rydberg</b></p>
 						</a>
@@ -199,8 +202,11 @@
 			$(window).load(function() {
 				$('#flexslider').flexslider({
 					controlNav: false,
-					directionNav: false
-				});
+					directionNav: false,
+					slideshowSpeed: 10000,         
+					animationSpeed: 100,          
+					randomize: true,              
+				});                               
 			});
 		</script>
 
