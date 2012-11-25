@@ -1,7 +1,7 @@
 
 // styles for front page
 
-// slideshow
+// slideshow -----------------------------
 
 // FlexSlider Necessary Styles
 .flexslider
@@ -28,12 +28,13 @@
 		margin: 0
 		padding: 0
 
-// front intro
+// front intro -----------------------------
 
 #front_intro
 	margin: 0 auto 2.5em auto
 	width: 90%
 	.intro
+		margin-top: 0.25em
 		font-size: 2.25em
 		line-height: 1.4em
 		color: $color_text
@@ -51,8 +52,53 @@
 		& > a:hover
 			background: $colorA
 			color: #fff
+
+@media screen and (max-width: 860px)
+	#front_intro
+		width: 100%
+
+@media screen and (max-width: 550px)
+	#front_intro
+		.intro
+			margin-top: 0
+			color: $color_text_lighter
+			font-size: 1.2em
+			font-weight: 400
+		b
+			font-weight: 400
+
+// message of the day -----------------------------
+
+#motd
+	margin: 1.75em 0 0.25em 0
+	i
+		font-style: normal
+		text-transform: uppercase
+		font-size: 0.85em
+		letter-spacing: 0.1em
+	p
+		color: $color_text_lighter
+		font-size: 1.2em
+		line-height: 1.4em
+	a
+		color: $color_text_lighter
+		border: none
+	.more
+		color: $colorB2
+	a:hover
+		color: #fff
+		background: $colorB2
+	#motd-icon
+		position: relative
+		top: 0.25em	
+		font-size: 1.25em	
 		
-// features
+@media screen and (max-width: 550px)
+	#motd
+		p
+			font-size: 1.0em
+
+// features -----------------------------
 
 #features
 	@include clearfix
@@ -63,8 +109,6 @@
 		margin: 0
 	.date
 		margin: 0 0 0.25em 0
-	h3 + p
-		margin-top: 0.5em
 	.instructor
 		margin-top: 0.25em
 	i
@@ -97,9 +141,10 @@
 	top: 0.15em
 	color: $colorB
 
-.features-ss-icon-star
+.features-ss-icon-eye
+	font-size: 1.3em
 	position: relative
-	top: 0.1em
+	top: 0.2em
 	color: $colorB
 
 @media screen and (max-width: 860px)
@@ -115,14 +160,24 @@
 
 @media screen and (max-width: 550px)
 
-	#features > div
-		width: 100%
-		clear: both
-
+	#features 
+		margin: 0 0 2em 0
+		h3
+			font-size: 1.0em
+		.instructor
+			margin-top: 0
+		.instructor > b
+			font-weight: 400
+		& > div
+			width: 100%
+			clear: both
+		& > div > a
+			padding: 0.5em 0 1em 0
+			
 	#features > div:nth-child(odd)
 		padding-right: 0
 
-// minical
+// minical -----------------------------
 
 #minical
 	margin: 0 0 0 0
