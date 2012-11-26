@@ -915,11 +915,16 @@ img {
   #desktop_nav {
     clear: both;
   }
+
+  /* line 84, ../sass/style.sass */
+  #content {
+    width: 90%;
+  }
 }
 /* line 8, ../sass/_front.sass */
 #slideshow-frame {
   width: 100%;
-  background: #666666;
+  background: #eeeeee;
 }
 
 /* line 12, ../sass/_front.sass */
@@ -976,100 +981,105 @@ img {
 /* line 51, ../sass/_front.sass */
 #front_intro .intro {
   margin: 0.25em 5% 0 0;
-  font-size: 2.35em;
-  line-height: 1.4em;
-  color: #333333;
-  font-weight: 200;
+  font-size: 2.9em;
+  line-height: 1.25em;
+  color: #666666;
+  font-weight: 300;
 }
 /* line 57, ../sass/_front.sass */
 #front_intro b {
-  font-weight: 200;
+  font-weight: 300;
   color: #fb2710;
 }
 /* line 60, ../sass/_front.sass */
 #front_intro .call {
   text-align: right;
+  font-size: 1.2em;
   font-style: italic;
-  margin-right: 5%;
+  margin: 0 5% 0 0;
 }
-/* line 64, ../sass/_front.sass */
+/* line 65, ../sass/_front.sass */
 #front_intro .call > a {
   color: #fb2710;
   border-bottom: 1px dashed #fb2710;
   font-style: normal;
 }
-/* line 68, ../sass/_front.sass */
+/* line 69, ../sass/_front.sass */
 #front_intro .call > a:hover {
   background: #fb2710;
   color: white;
 }
 
-@media screen and (max-width: 1100px) {
-  /* line 73, ../sass/_front.sass */
+@media screen and (max-width: 1150px) {
+  /* line 74, ../sass/_front.sass */
   #front_intro {
     width: 80%;
   }
 }
 @media screen and (max-width: 860px) {
-  /* line 78, ../sass/_front.sass */
+  /* line 79, ../sass/_front.sass */
   #front_intro .intro {
     font-size: 1.5em;
     font-weight: 400;
   }
-  /* line 81, ../sass/_front.sass */
+  /* line 82, ../sass/_front.sass */
   #front_intro b {
     font-weight: 400;
   }
+  /* line 84, ../sass/_front.sass */
+  #front_intro .call {
+    margin-top: 1em;
+  }
 }
 @media screen and (max-width: 550px) {
-  /* line 85, ../sass/_front.sass */
+  /* line 88, ../sass/_front.sass */
   #front_intro {
     width: 90%;
   }
-  /* line 87, ../sass/_front.sass */
+  /* line 90, ../sass/_front.sass */
   #front_intro .intro {
     margin-top: 0;
     color: #666666;
     font-size: 1.2em;
     font-weight: 400;
   }
-  /* line 92, ../sass/_front.sass */
+  /* line 95, ../sass/_front.sass */
   #front_intro b {
     font-weight: 400;
   }
 }
-/* line 97, ../sass/_front.sass */
+/* line 100, ../sass/_front.sass */
 #motd {
   margin: 1em 0 0 0;
 }
-/* line 99, ../sass/_front.sass */
+/* line 102, ../sass/_front.sass */
 #motd i {
   font-style: normal;
   text-transform: uppercase;
   font-size: 0.85em;
   letter-spacing: 0.1em;
 }
-/* line 104, ../sass/_front.sass */
+/* line 107, ../sass/_front.sass */
 #motd p {
   color: #666666;
   font-size: 1.2em;
   line-height: 1.4em;
 }
-/* line 108, ../sass/_front.sass */
+/* line 111, ../sass/_front.sass */
 #motd .more {
   border-bottom: 1px dashed #666666;
 }
-/* line 110, ../sass/_front.sass */
+/* line 113, ../sass/_front.sass */
 #motd a {
   color: #666666;
   border: none;
 }
-/* line 113, ../sass/_front.sass */
+/* line 116, ../sass/_front.sass */
 #motd a:hover {
   color: #0f7eb2;
   background: none;
 }
-/* line 116, ../sass/_front.sass */
+/* line 119, ../sass/_front.sass */
 #motd #motd-icon {
   position: relative;
   top: 0.25em;
@@ -1077,12 +1087,12 @@ img {
 }
 
 @media screen and (max-width: 550px) {
-  /* line 123, ../sass/_front.sass */
+  /* line 126, ../sass/_front.sass */
   #motd p {
     font-size: 1em;
   }
 }
-/* line 128, ../sass/_front.sass */
+/* line 131, ../sass/_front.sass */
 #features {
   zoom: 1;
   padding: 2em 0 0 0;
@@ -1096,38 +1106,38 @@ img {
 #features:after {
   clear: both;
 }
-/* line 131, ../sass/_front.sass */
+/* line 134, ../sass/_front.sass */
 #features h3 {
   font-size: 1.2em;
   color: #666666;
   margin: 0;
 }
-/* line 135, ../sass/_front.sass */
+/* line 138, ../sass/_front.sass */
 #features .date {
   margin: 0 0 0.25em 0;
 }
-/* line 137, ../sass/_front.sass */
+/* line 140, ../sass/_front.sass */
 #features .instructor {
   margin-top: 0.25em;
 }
-/* line 139, ../sass/_front.sass */
+/* line 142, ../sass/_front.sass */
 #features i {
   color: #0f7eb2;
 }
 
-/* line 142, ../sass/_front.sass */
+/* line 145, ../sass/_front.sass */
 #features > div {
   width: 25%;
   float: left;
   padding-right: 1em;
 }
 
-/* line 147, ../sass/_front.sass */
+/* line 150, ../sass/_front.sass */
 #features > div:nth-child(n+4) {
   padding-right: 0;
 }
 
-/* line 150, ../sass/_front.sass */
+/* line 153, ../sass/_front.sass */
 #features > div > a {
   display: block;
   border: none;
@@ -1136,7 +1146,7 @@ img {
   color: #666666;
 }
 
-/* line 157, ../sass/_front.sass */
+/* line 160, ../sass/_front.sass */
 #features > div > a:hover,
 #features > div > a:hover > h3 {
   background: white;
@@ -1144,12 +1154,12 @@ img {
   border-bottom: none;
 }
 
-/* line 163, ../sass/_front.sass */
+/* line 166, ../sass/_front.sass */
 #features > div > a:hover {
   border-top: 1px solid #3e9bc3;
 }
 
-/* line 166, ../sass/_front.sass */
+/* line 169, ../sass/_front.sass */
 .features-ss-icon-clock {
   margin-right: 0.1em;
   position: relative;
@@ -1157,7 +1167,7 @@ img {
   color: #3e9bc3;
 }
 
-/* line 172, ../sass/_front.sass */
+/* line 175, ../sass/_front.sass */
 .features-ss-icon-eye {
   font-size: 1.3em;
   position: relative;
@@ -1166,70 +1176,70 @@ img {
 }
 
 @media screen and (max-width: 860px) {
-  /* line 180, ../sass/_front.sass */
+  /* line 183, ../sass/_front.sass */
   #features > div {
     width: 50%;
   }
 
-  /* line 183, ../sass/_front.sass */
+  /* line 186, ../sass/_front.sass */
   #features > div:nth-child(even) {
     padding-right: 0;
   }
 
-  /* line 186, ../sass/_front.sass */
+  /* line 189, ../sass/_front.sass */
   #features > div:nth-child(odd) {
     padding-right: 1em;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 191, ../sass/_front.sass */
+  /* line 194, ../sass/_front.sass */
   #features {
     margin: 0 0 2em 0;
   }
-  /* line 193, ../sass/_front.sass */
+  /* line 196, ../sass/_front.sass */
   #features h3 {
     font-size: 1em;
   }
-  /* line 195, ../sass/_front.sass */
+  /* line 198, ../sass/_front.sass */
   #features .instructor {
     margin-top: 0;
   }
-  /* line 197, ../sass/_front.sass */
+  /* line 200, ../sass/_front.sass */
   #features .instructor > b {
     font-weight: 400;
   }
-  /* line 199, ../sass/_front.sass */
+  /* line 202, ../sass/_front.sass */
   #features > div {
     width: 100%;
     clear: both;
   }
-  /* line 202, ../sass/_front.sass */
+  /* line 205, ../sass/_front.sass */
   #features > div > a {
     padding: 0.5em 0 1em 0;
   }
 
-  /* line 205, ../sass/_front.sass */
+  /* line 208, ../sass/_front.sass */
   #features > div:nth-child(odd) {
     padding-right: 0;
   }
 }
-/* line 210, ../sass/_front.sass */
+/* line 213, ../sass/_front.sass */
 #minical {
   margin: 0 0 0 0;
 }
-/* line 212, ../sass/_front.sass */
+/* line 215, ../sass/_front.sass */
 #minical h2 {
   margin: 0 0 0.5em 0;
   float: left;
 }
-/* line 215, ../sass/_front.sass */
+/* line 218, ../sass/_front.sass */
 #minical h2 > a,
 #minical h2 > a:hover {
   color: #fb2710;
   border: none;
 }
 
-/* line 220, ../sass/_front.sass */
+/* line 223, ../sass/_front.sass */
 #minical-full {
   float: left;
   margin: 0 0 0 0.5em;
@@ -1237,20 +1247,20 @@ img {
   top: -0.1em;
   font-size: 0.85em;
 }
-/* line 226, ../sass/_front.sass */
+/* line 229, ../sass/_front.sass */
 #minical-full > a {
   background: #fb2710;
   color: white;
   padding: 4px 8px;
   border-radius: 12px;
 }
-/* line 231, ../sass/_front.sass */
+/* line 234, ../sass/_front.sass */
 #minical-full > a:hover {
   background: #f75f53;
   color: white;
 }
 
-/* line 235, ../sass/_front.sass */
+/* line 238, ../sass/_front.sass */
 .minical_month {
   margin-bottom: 0.5em;
   zoom: 1;
@@ -1264,27 +1274,27 @@ img {
 .minical_month:after {
   clear: both;
 }
-/* line 238, ../sass/_front.sass */
+/* line 241, ../sass/_front.sass */
 .minical_month > h4 {
   float: left;
   margin: 0.5em 1em 0.5em 0;
   clear: left;
   color: #fb2710;
 }
-/* line 243, ../sass/_front.sass */
+/* line 246, ../sass/_front.sass */
 .minical_month > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   float: left;
 }
-/* line 248, ../sass/_front.sass */
+/* line 251, ../sass/_front.sass */
 .minical_month > ul > li {
   margin: 0 2px 2px 0;
   float: left;
   font-size: 0.8em;
 }
-/* line 252, ../sass/_front.sass */
+/* line 255, ../sass/_front.sass */
 .minical_month > ul > li > a {
   display: block;
   border: none;
@@ -1293,21 +1303,21 @@ img {
   padding: 0px 6px;
   border-radius: 9px;
 }
-/* line 259, ../sass/_front.sass */
+/* line 262, ../sass/_front.sass */
 .minical_month > ul > li > a:hover {
   background: #cccccc;
   color: #aaaaaa;
 }
-/* line 262, ../sass/_front.sass */
+/* line 265, ../sass/_front.sass */
 .minical_month > ul > .sunday {
   margin-right: 15px;
 }
-/* line 264, ../sass/_front.sass */
+/* line 267, ../sass/_front.sass */
 .minical_month .event_1x {
   background: #fb2710;
   color: white;
 }
-/* line 267, ../sass/_front.sass */
+/* line 270, ../sass/_front.sass */
 .minical_month .event_1x:hover {
   background: #f75f53;
   color: white;
