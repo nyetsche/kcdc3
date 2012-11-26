@@ -1,7 +1,17 @@
 
 // styles for front page
 
+
+
 // slideshow -----------------------------
+
+#slideshow-frame
+	width: 100%
+	background: #666
+
+#slideshow
+	max-width: 960px
+	margin: 0 auto 0 auto
 
 // FlexSlider Necessary Styles
 .flexslider
@@ -23,20 +33,24 @@
 	margin: 0
 	padding: 0
 	background: #333
-	border: 1px solid #999
+	border-top: 1px solid #333
+	border-bottom: 1px solid #333
 	& > li
 		list-style: none
 		margin: 0
 		padding: 0
 
+
+
 // front intro -----------------------------
 
 #front_intro
-	margin: 0 auto 2.5em auto
+	margin: 1.5em auto 2.0em auto
 	width: 90%
+	max-width: 960px
 	.intro
-		margin-top: 0.25em
-		font-size: 2.25em
+		margin: 0.25em 5% 0 0
+		font-size: 2.35em
 		line-height: 1.4em
 		color: $color_text
 		font-weight: 200
@@ -46,6 +60,7 @@
 	.call 
 		text-align: right
 		font-style: italic
+		margin-right: 5%
 		& > a
 			color: $colorA
 			border-bottom: 1px dashed $colorA
@@ -54,12 +69,21 @@
 			background: $colorA
 			color: #fff
 
+@media screen and (max-width: 1100px)
+	#front_intro
+		width: 80%
+
 @media screen and (max-width: 860px)
 	#front_intro
-		width: 100%
+		.intro
+			font-size: 1.5em
+			font-weight: 400
+		b
+			font-weight: 400
 
 @media screen and (max-width: 550px)
 	#front_intro
+		width: 90%
 		.intro
 			margin-top: 0
 			color: $color_text_lighter
@@ -71,7 +95,7 @@
 // message of the day -----------------------------
 
 #motd
-	margin: 1.75em 0 0 0
+	margin: 1em 0 0 0
 	i
 		font-style: normal
 		text-transform: uppercase
@@ -82,11 +106,10 @@
 		font-size: 1.2em
 		line-height: 1.4em
 	.more
-		color: $colorB2
+		border-bottom: 1px dashed $color_text_lighter
 	a
 		color: $color_text_lighter
 		border: none
-		display: block
 	a:hover
 		color: $colorB2
 		background: none

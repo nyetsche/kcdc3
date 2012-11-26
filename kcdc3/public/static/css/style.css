@@ -833,199 +833,243 @@ strong, b {
 }
 
 /* line 31, ../sass/style.sass */
-#container {
-  width: 80%;
-  max-width: 960px;
-  margin: 2em auto 0 auto;
-}
-
-/* line 36, ../sass/style.sass */
 #skip {
   position: absolute;
   left: -9000px;
 }
 
-/* line 40, ../sass/style.sass */
+/* line 35, ../sass/style.sass */
 img {
   max-width: 100%;
 }
 
 /* ----- layout  -------------------------------------------- */
-/* line 46, ../sass/style.sass */
+/* line 41, ../sass/style.sass */
 #mobile_jump {
   display: none;
 }
 
-/* line 48, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 #mobile_nav {
   display: none;
 }
 
 @media screen and (max-width: 550px) {
-  /* line 52, ../sass/style.sass */
+  /* line 47, ../sass/style.sass */
   #desktop_nav {
     display: none;
   }
 }
-/* line 57, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
+#header {
+  width: 80%;
+  max-width: 960px;
+  margin: 1em auto 0 auto;
+  padding: 1em 0 0 0;
+  clear: both;
+  zoom: 1;
+}
+/* line 18, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+#header:before, #header:after {
+  content: "";
+  display: table;
+}
+/* line 23, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+#header:after {
+  clear: both;
+}
+
+/* line 60, ../sass/style.sass */
 #logo {
   width: 250px;
   margin-bottom: 1em;
   float: left;
 }
 
-/* line 62, ../sass/style.sass */
+/* line 65, ../sass/style.sass */
 #desktop_nav {
   float: left;
 }
 
-/* line 65, ../sass/style.sass */
+/* line 68, ../sass/style.sass */
 #content {
-  clear: both;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto 0 auto;
   padding: 1em 0 0 0;
+  clear: both;
 }
 
-/* line 69, ../sass/style.sass */
+/* line 75, ../sass/style.sass */
 #footer {
   margin-top: 4em;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 74, ../sass/style.sass */
+  /* line 80, ../sass/style.sass */
   #logo {
     clear: both;
   }
 
-  /* line 76, ../sass/style.sass */
+  /* line 82, ../sass/style.sass */
   #desktop_nav {
     clear: both;
   }
 }
-/* line 7, ../sass/_front.sass */
+/* line 8, ../sass/_front.sass */
+#slideshow-frame {
+  width: 100%;
+  background: #666666;
+}
+
+/* line 12, ../sass/_front.sass */
+#slideshow {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/* line 17, ../sass/_front.sass */
 .flexslider {
   margin: 0;
   padding: 0;
 }
 
-/* line 11, ../sass/_front.sass */
+/* line 21, ../sass/_front.sass */
 .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
-/* line 14, ../sass/_front.sass */
+/* line 24, ../sass/_front.sass */
 .slides img {
   width: 100%;
   display: block;
 }
 
 /* No JavaScript Fallback */
-/* line 19, ../sass/_front.sass */
+/* line 29, ../sass/_front.sass */
 .no-js .slides > li:first-child {
   display: block;
 }
 
-/* line 22, ../sass/_front.sass */
+/* line 32, ../sass/_front.sass */
 #flexslider > ul {
   margin: 0;
   padding: 0;
   background: #333333;
-  border: 1px solid #999999;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
 }
-/* line 27, ../sass/_front.sass */
+/* line 38, ../sass/_front.sass */
 #flexslider > ul > li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 34, ../sass/_front.sass */
+/* line 47, ../sass/_front.sass */
 #front_intro {
-  margin: 0 auto 2.5em auto;
+  margin: 1.5em auto 2em auto;
   width: 90%;
+  max-width: 960px;
 }
-/* line 37, ../sass/_front.sass */
+/* line 51, ../sass/_front.sass */
 #front_intro .intro {
-  margin-top: 0.25em;
-  font-size: 2.25em;
+  margin: 0.25em 5% 0 0;
+  font-size: 2.35em;
   line-height: 1.4em;
   color: #333333;
   font-weight: 200;
 }
-/* line 43, ../sass/_front.sass */
+/* line 57, ../sass/_front.sass */
 #front_intro b {
   font-weight: 200;
   color: #fb2710;
 }
-/* line 46, ../sass/_front.sass */
+/* line 60, ../sass/_front.sass */
 #front_intro .call {
   text-align: right;
   font-style: italic;
+  margin-right: 5%;
 }
-/* line 49, ../sass/_front.sass */
+/* line 64, ../sass/_front.sass */
 #front_intro .call > a {
   color: #fb2710;
   border-bottom: 1px dashed #fb2710;
   font-style: normal;
 }
-/* line 53, ../sass/_front.sass */
+/* line 68, ../sass/_front.sass */
 #front_intro .call > a:hover {
   background: #fb2710;
   color: white;
 }
 
-@media screen and (max-width: 860px) {
-  /* line 58, ../sass/_front.sass */
+@media screen and (max-width: 1100px) {
+  /* line 73, ../sass/_front.sass */
   #front_intro {
-    width: 100%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 860px) {
+  /* line 78, ../sass/_front.sass */
+  #front_intro .intro {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  /* line 81, ../sass/_front.sass */
+  #front_intro b {
+    font-weight: 400;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 63, ../sass/_front.sass */
+  /* line 85, ../sass/_front.sass */
+  #front_intro {
+    width: 90%;
+  }
+  /* line 87, ../sass/_front.sass */
   #front_intro .intro {
     margin-top: 0;
     color: #666666;
     font-size: 1.2em;
     font-weight: 400;
   }
-  /* line 68, ../sass/_front.sass */
+  /* line 92, ../sass/_front.sass */
   #front_intro b {
     font-weight: 400;
   }
 }
-/* line 73, ../sass/_front.sass */
+/* line 97, ../sass/_front.sass */
 #motd {
-  margin: 1.75em 0 0 0;
+  margin: 1em 0 0 0;
 }
-/* line 75, ../sass/_front.sass */
+/* line 99, ../sass/_front.sass */
 #motd i {
   font-style: normal;
   text-transform: uppercase;
   font-size: 0.85em;
   letter-spacing: 0.1em;
 }
-/* line 80, ../sass/_front.sass */
+/* line 104, ../sass/_front.sass */
 #motd p {
   color: #666666;
   font-size: 1.2em;
   line-height: 1.4em;
 }
-/* line 84, ../sass/_front.sass */
+/* line 108, ../sass/_front.sass */
 #motd .more {
-  color: #0f7eb2;
+  border-bottom: 1px dashed #666666;
 }
-/* line 86, ../sass/_front.sass */
+/* line 110, ../sass/_front.sass */
 #motd a {
   color: #666666;
   border: none;
-  display: block;
 }
-/* line 90, ../sass/_front.sass */
+/* line 113, ../sass/_front.sass */
 #motd a:hover {
   color: #0f7eb2;
   background: none;
 }
-/* line 93, ../sass/_front.sass */
+/* line 116, ../sass/_front.sass */
 #motd #motd-icon {
   position: relative;
   top: 0.25em;
@@ -1033,12 +1077,12 @@ img {
 }
 
 @media screen and (max-width: 550px) {
-  /* line 100, ../sass/_front.sass */
+  /* line 123, ../sass/_front.sass */
   #motd p {
     font-size: 1em;
   }
 }
-/* line 105, ../sass/_front.sass */
+/* line 128, ../sass/_front.sass */
 #features {
   zoom: 1;
   padding: 2em 0 0 0;
@@ -1052,38 +1096,38 @@ img {
 #features:after {
   clear: both;
 }
-/* line 108, ../sass/_front.sass */
+/* line 131, ../sass/_front.sass */
 #features h3 {
   font-size: 1.2em;
   color: #666666;
   margin: 0;
 }
-/* line 112, ../sass/_front.sass */
+/* line 135, ../sass/_front.sass */
 #features .date {
   margin: 0 0 0.25em 0;
 }
-/* line 114, ../sass/_front.sass */
+/* line 137, ../sass/_front.sass */
 #features .instructor {
   margin-top: 0.25em;
 }
-/* line 116, ../sass/_front.sass */
+/* line 139, ../sass/_front.sass */
 #features i {
   color: #0f7eb2;
 }
 
-/* line 119, ../sass/_front.sass */
+/* line 142, ../sass/_front.sass */
 #features > div {
   width: 25%;
   float: left;
   padding-right: 1em;
 }
 
-/* line 124, ../sass/_front.sass */
+/* line 147, ../sass/_front.sass */
 #features > div:nth-child(n+4) {
   padding-right: 0;
 }
 
-/* line 127, ../sass/_front.sass */
+/* line 150, ../sass/_front.sass */
 #features > div > a {
   display: block;
   border: none;
@@ -1092,7 +1136,7 @@ img {
   color: #666666;
 }
 
-/* line 134, ../sass/_front.sass */
+/* line 157, ../sass/_front.sass */
 #features > div > a:hover,
 #features > div > a:hover > h3 {
   background: white;
@@ -1100,12 +1144,12 @@ img {
   border-bottom: none;
 }
 
-/* line 140, ../sass/_front.sass */
+/* line 163, ../sass/_front.sass */
 #features > div > a:hover {
   border-top: 1px solid #3e9bc3;
 }
 
-/* line 143, ../sass/_front.sass */
+/* line 166, ../sass/_front.sass */
 .features-ss-icon-clock {
   margin-right: 0.1em;
   position: relative;
@@ -1113,7 +1157,7 @@ img {
   color: #3e9bc3;
 }
 
-/* line 149, ../sass/_front.sass */
+/* line 172, ../sass/_front.sass */
 .features-ss-icon-eye {
   font-size: 1.3em;
   position: relative;
@@ -1122,70 +1166,70 @@ img {
 }
 
 @media screen and (max-width: 860px) {
-  /* line 157, ../sass/_front.sass */
+  /* line 180, ../sass/_front.sass */
   #features > div {
     width: 50%;
   }
 
-  /* line 160, ../sass/_front.sass */
+  /* line 183, ../sass/_front.sass */
   #features > div:nth-child(even) {
     padding-right: 0;
   }
 
-  /* line 163, ../sass/_front.sass */
+  /* line 186, ../sass/_front.sass */
   #features > div:nth-child(odd) {
     padding-right: 1em;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 168, ../sass/_front.sass */
+  /* line 191, ../sass/_front.sass */
   #features {
     margin: 0 0 2em 0;
   }
-  /* line 170, ../sass/_front.sass */
+  /* line 193, ../sass/_front.sass */
   #features h3 {
     font-size: 1em;
   }
-  /* line 172, ../sass/_front.sass */
+  /* line 195, ../sass/_front.sass */
   #features .instructor {
     margin-top: 0;
   }
-  /* line 174, ../sass/_front.sass */
+  /* line 197, ../sass/_front.sass */
   #features .instructor > b {
     font-weight: 400;
   }
-  /* line 176, ../sass/_front.sass */
+  /* line 199, ../sass/_front.sass */
   #features > div {
     width: 100%;
     clear: both;
   }
-  /* line 179, ../sass/_front.sass */
+  /* line 202, ../sass/_front.sass */
   #features > div > a {
     padding: 0.5em 0 1em 0;
   }
 
-  /* line 182, ../sass/_front.sass */
+  /* line 205, ../sass/_front.sass */
   #features > div:nth-child(odd) {
     padding-right: 0;
   }
 }
-/* line 187, ../sass/_front.sass */
+/* line 210, ../sass/_front.sass */
 #minical {
   margin: 0 0 0 0;
 }
-/* line 189, ../sass/_front.sass */
+/* line 212, ../sass/_front.sass */
 #minical h2 {
   margin: 0 0 0.5em 0;
   float: left;
 }
-/* line 192, ../sass/_front.sass */
+/* line 215, ../sass/_front.sass */
 #minical h2 > a,
 #minical h2 > a:hover {
   color: #fb2710;
   border: none;
 }
 
-/* line 197, ../sass/_front.sass */
+/* line 220, ../sass/_front.sass */
 #minical-full {
   float: left;
   margin: 0 0 0 0.5em;
@@ -1193,20 +1237,20 @@ img {
   top: -0.1em;
   font-size: 0.85em;
 }
-/* line 203, ../sass/_front.sass */
+/* line 226, ../sass/_front.sass */
 #minical-full > a {
   background: #fb2710;
   color: white;
   padding: 4px 8px;
   border-radius: 12px;
 }
-/* line 208, ../sass/_front.sass */
+/* line 231, ../sass/_front.sass */
 #minical-full > a:hover {
   background: #f75f53;
   color: white;
 }
 
-/* line 212, ../sass/_front.sass */
+/* line 235, ../sass/_front.sass */
 .minical_month {
   margin-bottom: 0.5em;
   zoom: 1;
@@ -1220,27 +1264,27 @@ img {
 .minical_month:after {
   clear: both;
 }
-/* line 215, ../sass/_front.sass */
+/* line 238, ../sass/_front.sass */
 .minical_month > h4 {
   float: left;
   margin: 0.5em 1em 0.5em 0;
   clear: left;
   color: #fb2710;
 }
-/* line 220, ../sass/_front.sass */
+/* line 243, ../sass/_front.sass */
 .minical_month > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   float: left;
 }
-/* line 225, ../sass/_front.sass */
+/* line 248, ../sass/_front.sass */
 .minical_month > ul > li {
   margin: 0 2px 2px 0;
   float: left;
   font-size: 0.8em;
 }
-/* line 229, ../sass/_front.sass */
+/* line 252, ../sass/_front.sass */
 .minical_month > ul > li > a {
   display: block;
   border: none;
@@ -1249,21 +1293,21 @@ img {
   padding: 0px 6px;
   border-radius: 9px;
 }
-/* line 236, ../sass/_front.sass */
+/* line 259, ../sass/_front.sass */
 .minical_month > ul > li > a:hover {
   background: #cccccc;
   color: #aaaaaa;
 }
-/* line 239, ../sass/_front.sass */
+/* line 262, ../sass/_front.sass */
 .minical_month > ul > .sunday {
   margin-right: 15px;
 }
-/* line 241, ../sass/_front.sass */
+/* line 264, ../sass/_front.sass */
 .minical_month .event_1x {
   background: #fb2710;
   color: white;
 }
-/* line 244, ../sass/_front.sass */
+/* line 267, ../sass/_front.sass */
 .minical_month .event_1x:hover {
   background: #f75f53;
   color: white;
