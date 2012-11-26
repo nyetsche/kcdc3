@@ -22,7 +22,8 @@
 #flexslider > ul 
 	margin: 0
 	padding: 0
-	background: #aaa
+	background: #333
+	border: 1px solid #999
 	& > li
 		list-style: none
 		margin: 0
@@ -70,7 +71,7 @@
 // message of the day -----------------------------
 
 #motd
-	margin: 1.75em 0 0.25em 0
+	margin: 1.75em 0 0 0
 	i
 		font-style: normal
 		text-transform: uppercase
@@ -80,14 +81,15 @@
 		color: $color_text_lighter
 		font-size: 1.2em
 		line-height: 1.4em
+	.more
+		color: $colorB2
 	a
 		color: $color_text_lighter
 		border: none
-	.more
-		color: $colorB2
+		display: block
 	a:hover
-		color: #fff
-		background: $colorB2
+		color: $colorB2
+		background: none
 	#motd-icon
 		position: relative
 		top: 0.25em	
@@ -125,7 +127,7 @@
 #features > div > a
 	display: block
 	border: none
-	border-top: 1px solid #ccc
+	border-top: 1px solid #ddd
 	padding: 1em 2em 2em 0
 	color: $color_text_lighter
 
@@ -134,6 +136,9 @@
 	background: #fff
 	color: $colorB2
 	border-bottom: none
+	
+#features > div > a:hover
+	border-top: 1px solid $colorB
 
 .features-ss-icon-clock
 	margin-right: 0.1em
@@ -183,11 +188,27 @@
 	margin: 0 0 0 0
 	h2
 		margin: 0 0 0.5em 0
+		float: left
 	h2 > a,
 	h2 > a:hover
 		color: $colorA
 		border: none
 		
+#minical-full
+	float: left
+	margin: 0 0 0 0.5em
+	position: relative
+	top: -0.1em
+	font-size: 0.85em
+	& > a
+		background: $colorA
+		color: #fff
+		padding: 4px 8px
+		border-radius: 12px
+	& > a:hover
+		background: $colorA1
+		color: #fff
+
 .minical_month
 	margin-bottom: 0.5em
 	@include clearfix
@@ -217,7 +238,9 @@
 		color: #aaa
 	& > ul > .sunday
 		margin-right: 15px
-	.event_1x,
-	.event_1x:hover
+	.event_1x
 		background: $colorA
+		color: #fff
+	.event_1x:hover
+		background: $colorA1
 		color: #fff
