@@ -881,17 +881,18 @@ img {
 
 /* line 60, ../sass/style.sass */
 #logo {
-  width: 250px;
+  width: 210px;
   margin-bottom: 1em;
   float: left;
 }
 
 /* line 65, ../sass/style.sass */
 #desktop_nav {
+  margin-top: 15px;
   float: left;
 }
 
-/* line 68, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 #content {
   width: 80%;
   max-width: 960px;
@@ -900,23 +901,25 @@ img {
   clear: both;
 }
 
-/* line 75, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 #footer {
   margin-top: 4em;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 80, ../sass/style.sass */
+  /* line 81, ../sass/style.sass */
   #logo {
     clear: both;
+    width: 80px;
+    margin: 0 auto 0 auto;
   }
 
-  /* line 82, ../sass/style.sass */
+  /* line 85, ../sass/style.sass */
   #desktop_nav {
     clear: both;
   }
 
-  /* line 84, ../sass/style.sass */
+  /* line 87, ../sass/style.sass */
   #content {
     width: 90%;
   }
