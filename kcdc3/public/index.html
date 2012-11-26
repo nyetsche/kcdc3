@@ -50,6 +50,9 @@
 						<li><img src="/media/uploads/front/lockpicking.jpg" alt="slideshow" /></li>
 						<li><img src="/media/uploads/front/light.jpg" alt="slideshow" /></li>
 						<li><img src="/media/uploads/front/plants.jpg" alt="slideshow" /></li>
+						<li><img src="/media/uploads/front/picture.jpg" alt="slideshow" /></li>
+						<li><img src="/media/uploads/front/tour.jpg" alt="slideshow" /></li>
+						<li><img src="/media/uploads/front/hands.jpg" alt="slideshow" /></li>
 					</ul>
 				</div>
 			</div>
@@ -99,7 +102,7 @@
 			
 			<div id="minical">
 				<h2><a href="/classes">Classes + Events</a></h2>
-				<p id="minical-full"><a href="/classes">Full calendar</a></h2>
+				<p id="minical-full"><a href="/classes">Full schedule</a></h2>
 				<div class="minical_month">
 					<h4>December</h4>
 					<ul>
@@ -211,8 +214,8 @@
 				$('#flexslider').flexslider({
 					controlNav: false,
 					directionNav: false,
-					slideshowSpeed: 10000,         
-					animationSpeed: 100,          
+					slideshowSpeed: 8000,         
+					animationSpeed: 50,          
 					randomize: true,              
 				});                               
 			});
@@ -227,13 +230,13 @@
 				// shared style
 				$.fn.qtip.styles.minical = { // Last part is the name of the style
 				   width: 200,
-				   background: '#F75F53',
-				   color: 'white',
+				   background: '#999',
+				   color: '#fff',
 				   textAlign: 'left',
 				   border: {
-				      width: 2,
-				      radius: 5,
-				      color: '#F75F53'
+				      width: 1,
+				      radius: 6,
+				      color: '#999'
 				   },
 				   tip: 'bottomLeft',
 				   name: 'dark' // Inherit the rest of the attributes from the preset dark style
@@ -244,19 +247,19 @@
 				$("a[href='/classes#2013-01-09']").qtip(
 				{
 					content: 'Political theater',
-					style:'minical',position:{corner:{target:'topRight',tooltip:'bottomLeft',},adjust:{x:-7,y:3,}}
+					style:'minical',position:{corner:{target:'topRight',tooltip:'bottomLeft',},adjust:{x:-8,y:3,}}
 				});
 
 				$("a[href='/classes#2013-01-22']").qtip(
 				{
 					content: 'Lockpicking',
-					style:'minical',position:{corner:{target:'topRight',tooltip:'bottomLeft',},adjust:{x:-7,y:3,}}
+					style:'minical',position:{corner:{target:'topRight',tooltip:'bottomLeft',},adjust:{x:-8,y:3,}}
 				});
 
 				$("a[href='/classes#2013-01-15']").qtip(
 				{
 					content: '<p>How Children\'s Television Works</p><p>Additional Class</p>',
-					style:'minical',position:{corner:{target:'topRight',tooltip:'bottomLeft',},adjust:{x:-7,y:3,}}
+					style:'minical',position:{corner:{target:'topRight',tooltip:'bottomLeft',},adjust:{x:-8,y:3,}}
 				});
 
 			});
