@@ -18,7 +18,7 @@
         animation: "fade",              //Select your animation type (fade/slide/show)
         slideshow: true,                //Should the slider animate automatically by default? (true/false)
         slideshowSpeed: 5000,           //Set the speed of the slideshow cycling, in milliseconds
-        animationDuration: 500,         //Set the speed of animations, in milliseconds
+        animationDuration: 120,         //Set the speed of animations, in milliseconds
         directionNav: false,             //Create navigation for previous/next navigation? (true/false)
         controlNav: false,               //Create navigation for paging control of each clide? (true/false)
         keyboardNav: true,              //Allow for keyboard navigation using left/right keys (true/false)
