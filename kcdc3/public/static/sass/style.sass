@@ -42,10 +42,6 @@ img
 	display: none
 #mobile_nav
 	display: none
-
-@media screen and (max-width: 550px)
-	#desktop_nav
-		display: none
 		
 // shared layout elts
 
@@ -61,6 +57,8 @@ img
 	width: 210px
 	margin-bottom: 1em
 	float: left
+	a:hover
+		background: none
 
 #desktop_nav
 	margin-top: 15px
@@ -76,7 +74,7 @@ img
 #footer
 	margin-top: 4em
 
-// mobile
+// tablet-ish
 @media screen and (max-width: 600px)
 	#logo
 		clear: both
@@ -86,6 +84,15 @@ img
 		clear: both
 	#content
 		width: 90%
+		
+// smartphone
+@media screen and (max-width: 550px)
+	#desktop_nav
+		display: none
+	#mobile_jump
+		display: block
+	#mobile_nav
+		display: block
 
 // page-specific styles
 @import '_front.sass'
