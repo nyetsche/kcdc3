@@ -863,9 +863,10 @@ strong, b {
 /* line 44, ../sass/_nav.sass */
 #mobile_jump a {
   border: none;
+  color: #333333;
 }
 
-/* line 46, ../sass/_nav.sass */
+/* line 47, ../sass/_nav.sass */
 #menu-icon {
   position: relative;
   top: 2px;
