@@ -81,8 +81,9 @@ img
 	margin: 12em 0 0 10%
 	padding: 0 1em 2em 1em
 	float: left
-	border: 1px solid #E9E9E9
-	border-left: 6px solid #F2F2F2
+	border: 1px solid #DDD
+	border-left: 6px solid #DDD
+	background: $colorE
 	@include clearfix
 
 #register
@@ -97,6 +98,11 @@ img
 	clear: both
 	border-top: 1px solid #ccc
 
+// tablet-big
+@media screen and (max-width: 800px)
+	#content
+		margin-top: 1em
+
 // tablet-ish
 @media screen and (max-width: 600px)
 	#logo
@@ -104,11 +110,14 @@ img
 		width: 80px
 		margin: 0 auto 0 auto
 	#desktop_nav
+		width: 100%
 		clear: both
 	#content
-		width: 90%
+		width: 80%
 	#footer
-		width: 90%
+		width: 80%
+		margin-top: 0
+		border: none
 		
 // smartphone
 @media screen and (max-width: 550px)
@@ -118,6 +127,13 @@ img
 		display: block
 	#mobile_nav
 		display: block
+	#content
+		margin-top: 0
+	#main_inside,
+	#sidebar_inside
+		width: 100%
+		clear: both
+		margin: 2em 0 0 0
 
 // page-specific styles
 @import '_front.sass'
