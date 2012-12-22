@@ -2,7 +2,7 @@
 body
 	color: $color_text
 	font-size: 15px
-	line-height: 1.4em
+	line-height: 1.5em
 	font-family: 'Source Sans Pro', 'Helvetica Neue',Helvetica,Arial,sans-serif
 	font-weight: 400
 	text-align: left
@@ -46,16 +46,25 @@ a img
 		background: none
 		border: none
 
+h3 a
+	color: $colorA
+	border: none
+	background: none
+h3 a:hover
+	color: #fff
+	background: $colorA
+
 h1
 	font-size: 4em
 	font-weight: 100
 	margin-top: 0
 	
 h2
-	font-size: 1.5em
+	font-size: 1.75em
 	margin-top: 2.5em
 
 h3
+	font-size: 1.25em
 	font-weight: bold
 	line-height: 1.25em
 
@@ -73,7 +82,9 @@ h6
 	font-style: italic
 	font-weight: bold
 	font-weight: 400
-	
+
+
+		
 // blocks
 
 p, ul, ol
@@ -82,8 +93,11 @@ p, ul, ol
 .intro
 	font-size: 1.6em
 	line-height: 1.6em
-	font-weight: 300
-	color: $color_text_darker
+	font-weight: 400
+	color: $colorB
+
+.intro + p
+	margin-top: 2em
 
 .secondary
 	font-size: 0.75em

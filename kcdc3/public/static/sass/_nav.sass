@@ -1,18 +1,20 @@
 
+// global navbar
 .nav
-	margin: 0
+	margin: 1em 0 0 1em
 	padding: 0
-
+	@include clearfix
+	
 .nav > li
 	float: left
 	list-style: none
-	margin: 0 0.2em 0.25em 0
 	display: inline-block
 
 .nav > li > a
 	border: none
 	color: $color_text
-	padding: 3px 0.5em
+	padding: 0.5em 0.5em 0.5em 0.5em
+	display: block
 	
 .nav > li > a:hover
 	background: $colorA
@@ -26,6 +28,7 @@
 	color: $colorA
 	font-weight: bold
 	
+// mobile navbar	
 #mobile_nav 
 	& > ul 
 		@include clearfix
@@ -34,14 +37,16 @@
 		& > li
 			display: block
 			margin: 0
-			width: 100%
-			clear: both
+			width: 50%
 			border-bottom: 1px solid #ccc
 		a
 			display: block
-			padding: 0.75em 0 0.75em 2.5em
+			padding: 0.75em 10% 0.75em 2em
 			margin: 0
+		// .nav_home
+		// 	width: 100%
 
+// mobile jump button
 #mobile_jump
 	width: 100%
 	text-align: right
@@ -51,3 +56,32 @@
 #menu-icon
 	position: relative
 	top: 2px
+	
+	
+// footer
+#footer a
+	border: none
+	
+	
+// local nav
+
+.local_nav
+	margin-bottom: 3em
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+	li
+		margin: 0
+		padding: 0
+		border-top: 3px solid #fff
+		background: $colorE
+	a
+		border: none
+		padding: 0.5em 0 0.5em 0.5em
+		display: block
+	.icon_decorative
+		color: darken($colorE, 10%)
+		position: relative
+		top: 0.15em
+		

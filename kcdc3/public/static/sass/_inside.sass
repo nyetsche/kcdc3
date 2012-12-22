@@ -1,12 +1,22 @@
 
+// icons -------------------------------------
 
+.ss-icon
+	margin: 0 0.2em 0 0
+	position: relative
+	top: 0.1em
+	color: $colorE3
 
-// classes -----------------------------------------
+.icon_push_right
+	margin-left: 1em
 
-.byline,
-.location
-	margin-top: 0
+// class detail display -----------------------------------------
 
+.meta
+	margin-top: 0.25em
+	.ss-icon
+		color: $colorE2
+	
 .registration-notice
 	width: 100%
 	clear: both
@@ -22,7 +32,7 @@
 	margin-top: 2em
 	border-top: 1px solid $colorA
 		
-// class signin form -----------------------------------
+// class signup form -----------------------------------
 
 #submit_button
 	height: 3em
@@ -37,3 +47,108 @@
 	color: #fff
 #submit_button:hover
 	background-color: $colorA
+
+#register label
+	margin: 1em 0 0.5em 0
+	display: block
+	
+#register input
+	display: block
+	
+#needs
+	width: 20em
+	
+	
+// event listings --------------------------------------
+
+.calendar
+	margin-top: -1em
+	dt,
+	dd
+		margin: 3em 0 0 0
+		padding: 2em 0 0 0
+		float: left
+		border-top: 6px solid $colorE
+	dt
+		width: 25%
+		clear: left
+		padding-top: 2.25em 
+	dd
+		width: 75%
+	dd + dd
+		margin-top: 0
+		margin-left: 25%
+		border: none
+	h3
+		margin: 0 0 0 0
+	p
+		margin: 0 0 0.5em 0
+	a
+		color: $colorA
+	a:hover
+		color: #fff
+		background: $colorA
+	a:hover .meta
+		color: #fff
+	.meta
+		color: $color_text
+		margin-top: 0.5em
+	.ss-icon
+		color: $colorE2
+	.registration_open,
+	.registration_waitlist
+		margin: 0 0.2em 0 1em
+		font-size: 1.1em
+		position: relative
+		top: 0.2em	
+		
+// usable throughout site		
+.registration_open
+	color: $colorG !important
+.registration_waitlist
+	color: $colorF !important
+		
+@media screen and (max-width: 600px)
+	.calendar
+		dt,
+		dd,
+		dd + dd
+			width: 100%
+			margin-left: 0
+		dd
+			border: none
+			margin-top: 0
+			
+			
+// section fronts -------------------------
+	
+#hed
+	margin-bottom: 3em
+	
+.section_hed
+	font-size: 8em
+	line-height: 0.85em
+	letter-spacing: -0.03em
+	color: $colorE2
+	font-weight: 600
+	margin: 0 0 0 0
+@media screen and (max-width: 860px)
+	.section_hed
+		font-size: 4em
+		line-height: 1em
+
+#hed p
+	font-size: 1.6em
+	line-height: 1.6em
+	font-weight: 400
+	color: $colorB
+	margin: 0.25em 30% 0 0.5em
+@media screen and (max-width: 860px)
+	#hed 
+		margin-bottom: 0
+		p
+			font-size: 1.2em
+			line-height: 1.25em
+			margin: 0.5em 25% 0 0
+		
+					
