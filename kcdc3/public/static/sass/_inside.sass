@@ -81,30 +81,52 @@
 		border: none
 	h3
 		margin: 0 0 0 0
+		color: $color_text_lighter
 	p
 		margin: 0 0 0.5em 0
 	a
-		color: $colorA
-	a:hover
-		color: #fff
-		background: $colorA
-	a:hover .meta
-		color: #fff
+		color: inherit
+		display: block
+		border: none
+		margin: 0
+		padding: 0
+	a:hover,
+	a:hover i,
+	a:hover h3,
+		color: $color_text_darker
+		background: $colorE1
 	.meta
 		color: $color_text
 		margin-top: 0.5em
 	.ss-icon
 		color: $colorE2
-	.registration_open,
-	.registration_waitlist
-		margin: 0 0.2em 0 1em
-		font-size: 1.1em
-		position: relative
-		top: 0.2em	
 		
-// usable throughout site		
+// indicator widgets - usable throughout site		
+
+.indicators
+	margin-top: 0.75em
+	margin-bottom: 1.5em
+
+.registration_indicator
+	background: $colorE
+	border: 1px solid darken($colorE, 10%)
+	border-radius: 4px
+	padding: 6px 10px
+	margin-left: 0.5em
+	
+.registration_indicator.solid
+	margin-left: 0
+	
+.registration_open,
+.registration_waitlist
+	margin: 0 0.2em 0 0
+	font-size: 1.1em
+	position: relative
+	top: 0.2em	
+
 .registration_open
 	color: $colorG !important
+
 .registration_waitlist
 	color: $colorF !important
 		
@@ -118,22 +140,43 @@
 		dd
 			border: none
 			margin-top: 0
+
+// special events indicators
+
+#hed .event_type_hed
+	color: $colorB
+	font-size: 1.25em
+	margin: 1em 0 0 0
+
+#hed .event_type_hed + h1
+	margin-top: 0
 			
+.calendar .event_type_hed
+	color: $colorB
+	font-size: 1em
+	margin: 0.25em 0 0 0
+
+.event_type_partner
+	background: $colorE
+
+
 			
 // section fronts -------------------------
 	
 #hed
-	margin-bottom: 3em
+	margin-bottom: 1em
+	@media screen and (max-width: 860px)
+		margin-bottom: 0
 	
 .section_hed
 	font-size: 8em
 	line-height: 0.85em
-	letter-spacing: -0.03em
-	color: $colorE2
-	font-weight: 600
-	margin: 0 0 0 0
-@media screen and (max-width: 860px)
-	.section_hed
+	letter-spacing: -0.04em
+	font-weight: 400
+	color: $colorB
+	@include text-shadow(1px 1px 1px rgba(0,0,0,0.05))
+	margin: 0.25em 0 0 0
+	@media screen and (max-width: 860px)
 		font-size: 4em
 		line-height: 1em
 
@@ -143,12 +186,26 @@
 	font-weight: 400
 	color: $colorB
 	margin: 0.25em 30% 0 0.5em
-@media screen and (max-width: 860px)
-	#hed 
-		margin-bottom: 0
-		p
-			font-size: 1.2em
-			line-height: 1.25em
-			margin: 0.5em 25% 0 0
+	@media screen and (max-width: 860px)
+		font-size: 1.2em
+		line-height: 1.25em
+		margin: 0.5em 25% 0 0
 		
+
+// sidebar details ----------------------------
+
+.sidebar_text
+	padding: 0 1em 2em 1em
+	border: 1px solid #DDD
+	border-left: 6px solid #DDD
+	background: $colorE
+
+.sidebar_contrast
+	background: #fff
+	border: none
+	padding: 0 1em 2em 0.5em
+	color: $colorB
+	h2,
+	h3
+		color: $colorB
 					
