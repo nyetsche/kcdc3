@@ -9,7 +9,7 @@
 	width: 100%
 	background: #fff
 
-#slideshow
+#front_slideshow
 	max-width: 960px
 	margin: 0 auto 1em auto
 
@@ -105,13 +105,24 @@
 
 // message of the day -----------------------------
 
-#motd
+#front_motd
 	margin: 0.1em 0 0 0
 	i
 		font-style: normal
-		text-transform: uppercase
-		font-size: 0.85em
-		letter-spacing: 0.1em
+		margin: 0 0.15em
+		padding: 0.4em 0.4em
+		color: $colorA
+		border: 1px solid $colorE1
+		font-style: normal
+		font-weight: 600
+		background: #fff
+		border-radius: 4px
+	i:hover
+		color: #fff
+		background-color: $colorA
+	.front_motd_button_decoration
+		font-size: 0.8em
+		margin: 0
 	p
 		margin: 0
 		color: $color_text_lighter
