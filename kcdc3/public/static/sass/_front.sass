@@ -47,7 +47,7 @@
 	margin: 1.5em auto 2.0em auto
 	width: 90%
 	max-width: 960px
-	.intro
+	.front_intro_text
 		margin: 0.25em 5% 0 0
 		font-size: 2.9em
 		line-height: 1.25em
@@ -56,18 +56,27 @@
 	b
 		font-weight: 300
 		color: $colorA
-	.call 
-		text-align: right
-		font-size: 1.2em
-		font-style: italic
-		margin: 0 5% 0 0
-		& > a
-			color: $colorA
-			border-bottom: 1px solid $colorA
-			font-style: normal
-		& > a:hover
-			background: $colorA
-			color: #fff
+
+.front_intro_call 
+	margin: 0 0 0 0
+	text-align: right
+	font-size: 1.5em
+	font-weight: 300
+	@media screen and (max-width: 860px)
+		font-size: 1.25em
+		margin-top: 1em
+	& > a
+		margin: 0 0.15em
+		padding: 0.1em 0.4em
+		color: $colorA
+		border: 1px solid $colorE1
+		font-style: normal
+		font-weight: 400
+		background: #fff
+		border-radius: 4px
+	& > a:hover
+		background: $colorA
+		color: #fff
 
 @media screen and (max-width: 1150px)
 	#front_intro
@@ -75,7 +84,7 @@
 
 @media screen and (max-width: 860px)
 	#front_intro
-		.intro
+		.front_intro_text
 			font-size: 1.5em
 			font-weight: 400
 		b
@@ -83,7 +92,7 @@
 		.call
 			margin-top: 1em
 
-@media screen and (max-width: 550px)
+@media screen and (max-width: 600px)
 	#front_intro
 		width: 90%
 		.intro

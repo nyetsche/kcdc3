@@ -59,8 +59,63 @@
 	
 	
 // footer
-#footer a
-	border: none
+
+#footer 
+	@include clearfix
+	a
+		margin: 0
+		border: none
+		color: $color_text
+		white-space: nowrap
+	a:hover
+		color: $colorA
+		background: none
+	.divider
+		color: $colorE2
+	.footer_social
+		margin-right: 0
+		font-size: 1.25em
+		.ss-icon
+			margin-right: 0
+			position: relative
+			top: 0.2em
+	.divider + .footer_social
+		margin-left: 0.1em
+			
+#footer_links,
+#footer_signup
+	float: left
+	margin: 0 0 1em 0
+	width: 50%
+	@media screen and (max-width: 680px)
+		width: 100%
+		clear: both
+		
+#footer_email
+	margin-top: 0.25em
+	
+#footer_signup
+	line-height: 1.5em
+	margin-top: 0.1em
+	input[type=email]
+		position: relative
+		top: 0.2em
+		height: 30px
+	.button
+		margin: 0.5em 0 0 0.5em
+		padding: 0.5em 1em 0.6em 1em
+		border: none
+		border-radius: 3px
+		font-size: 0.9em
+		font-weight: bold
+		@include box-shadow(1px 1px 0px rgba(0,0,0,0.3))
+		background-color: $colorB
+		color: #fff
+	.button:hover
+		background-color: $colorA
+	
+
+	
 	
 	
 // local nav

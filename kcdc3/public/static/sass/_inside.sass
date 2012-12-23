@@ -5,7 +5,6 @@
 	margin: 0 0.2em 0 0
 	position: relative
 	top: 0.1em
-	color: $colorE3
 
 .icon_push_right
 	margin-left: 1em
@@ -93,10 +92,9 @@
 	a:hover,
 	a:hover i,
 	a:hover h3,
-		color: $color_text_darker
-		background: $colorE1
+		color: $colorB
+		background: inherit
 	.meta
-		color: $color_text
 		margin-top: 0.5em
 	.ss-icon
 		color: $colorE2
@@ -152,30 +150,32 @@
 	margin-top: 0
 			
 .calendar .event_type_hed
+	margin: 0.25em 0 0 0
 	color: $colorB
 	font-size: 1em
-	margin: 0.25em 0 0 0
-
+	font-weight: 600
+	
 .event_type_partner
-	background: $colorE
+	border-left: 6px solid $colorE !important
+	padding-left: 0.75em !important
 
 
 			
-// section fronts -------------------------
+// page head areas -------------------------
 	
 #hed
-	margin-bottom: 1em
+	margin: 3.5em 0 1.5em 0
 	@media screen and (max-width: 860px)
 		margin-bottom: 0
 	
 .section_hed
-	font-size: 8em
+	font-size: 6em
 	line-height: 0.85em
-	letter-spacing: -0.04em
+	letter-spacing: -0.02em
 	font-weight: 400
-	color: $colorB
-	@include text-shadow(1px 1px 1px rgba(0,0,0,0.05))
-	margin: 0.25em 0 0 0
+	color: $color_text_lighter
+	@include text-shadow(1px 1px 1px rgba(0,0,0,0.03))
+	margin: 0
 	@media screen and (max-width: 860px)
 		font-size: 4em
 		line-height: 1em
@@ -184,7 +184,7 @@
 	font-size: 1.6em
 	line-height: 1.6em
 	font-weight: 400
-	color: $colorB
+	color: $color_text_lighter
 	margin: 0.25em 30% 0 0.5em
 	@media screen and (max-width: 860px)
 		font-size: 1.2em
